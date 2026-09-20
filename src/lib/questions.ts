@@ -1,5 +1,4 @@
 import rawQuestions from '../data/van-mieu-quoc-tu-giam.questions.json'
-import { getExplanation } from './explanation-notes'
 
 export interface Question {
   id: number
@@ -15,7 +14,6 @@ export interface Question {
 export const questions = (rawQuestions as Question[]).map((question, index) => ({
   ...question,
   id: index + 1,
-  explanation: getExplanation(index + 1, question.explanation),
 }))
 export const questionIds = questions.map((question) => question.id)
 
