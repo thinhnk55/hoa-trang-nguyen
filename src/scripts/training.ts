@@ -214,11 +214,13 @@ function updateHome() {
   const progress = document.querySelector<HTMLElement>('[data-home-progress]')
   const continueButton = document.querySelector<HTMLButtonElement>('[data-action="continue"]')
   const skipMasteredButton = document.querySelector<HTMLButtonElement>('[data-action="skip-mastered"]')
+  const restartButton = document.querySelector<HTMLButtonElement>('[data-action="restart"]')
   const resetButton = document.querySelector<HTMLButtonElement>('[data-reset-button]')
   if (!progress || !continueButton || !skipMasteredButton) return
   if (resetButton) resetButton.hidden = !state
   continueButton.hidden = !isActive(state)
   skipMasteredButton.hidden = !state?.masteredIds.length || state.masteredIds.length === QUESTION_COUNT
+  restartButton?.replaceChildren(state ? 'Làm lại toàn bộ' : 'Làm bài')
   updateActionLayouts()
   if (!state) return
   progress.hidden = false
@@ -260,8 +262,10 @@ function setQuestionMode() {
   const revealButton = page.querySelector<HTMLButtonElement>('[data-reveal-answer]')
   const continueButton = page.querySelector<HTMLButtonElement>('[data-action="continue"]')
   const skipMasteredButton = page.querySelector<HTMLButtonElement>('[data-action="skip-mastered"]')
+  const restartButton = page.querySelector<HTMLButtonElement>('[data-action="restart"]')
   continueButton?.toggleAttribute('hidden', !isActive(state))
   skipMasteredButton?.toggleAttribute('hidden', !state?.masteredIds.length || state.masteredIds.length === QUESTION_COUNT)
+  restartButton?.replaceChildren(state ? 'Làm lại toàn bộ' : 'Làm bài')
   updateActionLayouts()
 
   if (state) {
