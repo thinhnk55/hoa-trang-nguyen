@@ -16,12 +16,8 @@ import { questionIds } from '../lib/questions'
       <label><input type="radio" name="order" value="reverse" /> Đảo thứ tự</label>
       <label class="time-setting" title="Thời gian tối đa cho một phiên làm bài">
         <span aria-hidden="true">⏱</span>
-        <select data-time-limit aria-label="Thời gian làm bài tối đa">
-          <option value="15">15 phút</option>
-          <option value="30" selected>30 phút</option>
-          <option value="45">45 phút</option>
-          <option value="60">60 phút</option>
-        </select>
+        <input data-time-limit type="number" min="1" max="99" step="1" value="30" inputmode="numeric" aria-label="Số phút làm bài tối đa" />
+        <small>phút</small>
       </label>
     </div>
     <div class="hero-actions">

@@ -2,7 +2,8 @@ const STORAGE_KEY = 'hocnhe.hoa-trang-nguyen.practice.v1'
 const SETTINGS_KEY = 'hocnhe.hoa-trang-nguyen.settings.v1'
 const QUESTION_COUNT = 150
 const TIME_LIMIT_SECONDS = 30 * 60
-const TIME_LIMIT_OPTIONS = [15, 30, 45, 60]
+const MIN_TIME_LIMIT_MINUTES = 1
+const MAX_TIME_LIMIT_MINUTES = 99
 const HOME_PATH = '/'
 const PRACTICE_PATH = '/on-tap/van-mieu-quoc-tu-giam'
 const RESULT_PATH = `${PRACTICE_PATH}/ket-qua`
@@ -73,7 +74,9 @@ function readSettings(): PracticeSettings {
     if (!value) return { timeLimitMinutes: 30 }
     const settings = JSON.parse(value) as Partial<PracticeSettings>
     const minutes = Number(settings.timeLimitMinutes)
-    return TIME_LIMIT_OPTIONS.includes(minutes) ? { timeLimitMinutes: minutes } : { timeLimitMinutes: 30 }
+    return minutes >= MIN_TIME_LIMIT_MINUTES && minutes <= MAX_TIME_LIMIT_MINUTES
+      ? { timeLimitMinutes: minutes }
+      : { timeLimitMinutes: 30 }
   } catch {
     return { timeLimitMinutes: 30 }
   }
@@ -388,14 +391,16 @@ document.addEventListener('click', (event) => {
 })
 
 document.addEventListener('change', (event) => {
-  const target = event.target as HTMLSelectElement | null
+  const target = event.target as HTMLInputElement | null
   if (!target?.matches('[data-time-limit]')) return
   const minutes = Number(target.value)
-  if (TIME_LIMIT_OPTIONS.includes(minutes)) saveSettings({ timeLimitMinutes: minutes })
+  if (Number.isInteger(minutes) && minutes >= MIN_TIME_LIMIT_MINUTES && minutes <= MAX_TIME_LIMIT_MINUTES) {
+    saveSettings({ timeLimitMinutes: minutes })
+  }
 })
 
-const timeLimitSelect = document.querySelector<HTMLSelectElement>('[data-time-limit]')
-if (timeLimitSelect) timeLimitSelect.value = String(readSettings().timeLimitMinutes)
+const timeLimitInput = document.querySelector<HTMLInputElement>('[data-time-limit]')
+if (timeLimitInput) timeLimitInput.value = String(readSettings().timeLimitMinutes)
 updateHome()
 updateIntro()
 setQuestionMode()
