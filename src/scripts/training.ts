@@ -15,6 +15,7 @@ type PracticeState = {
   order: Order
   masteredIds: number[]
   lastIncorrectIds: number[]
+  revealedIds?: number[]
   answers: Record<string, boolean>
   startedAt: string
   expiresAt: string
@@ -26,6 +27,7 @@ type PracticeState = {
 type PracticeSettings = {
   timeLimitMinutes: number
   randomOrder: boolean
+  revealAnswer: boolean
 }
 
 function questionPath(id: number) {
@@ -72,15 +74,16 @@ function saveState(state: PracticeState) {
 function readSettings(): PracticeSettings {
   try {
     const value = localStorage.getItem(SETTINGS_KEY)
-    if (!value) return { timeLimitMinutes: 30, randomOrder: false }
+    if (!value) return { timeLimitMinutes: 30, randomOrder: false, revealAnswer: false }
     const settings = JSON.parse(value) as Partial<PracticeSettings>
     const minutes = Number(settings.timeLimitMinutes)
     return {
       timeLimitMinutes: minutes >= MIN_TIME_LIMIT_MINUTES && minutes <= MAX_TIME_LIMIT_MINUTES ? minutes : 30,
       randomOrder: settings.randomOrder === true,
+      revealAnswer: settings.revealAnswer === true,
     }
   } catch {
-    return { timeLimitMinutes: 30, randomOrder: false }
+    return { timeLimitMinutes: 30, randomOrder: false, revealAnswer: false }
   }
 }
 
@@ -120,6 +123,7 @@ function startPractice(order: Order = 'normal', queue?: number[]) {
     order,
     masteredIds: existing?.masteredIds ?? [],
     lastIncorrectIds: [],
+    revealedIds: [],
     answers: {},
     startedAt: new Date().toISOString(),
     expiresAt: new Date(Date.now() + timeLimitSeconds * 1000).toISOString(),
@@ -244,6 +248,7 @@ function setQuestionMode() {
   const answerArea = page.querySelector<HTMLElement>('[data-answer-area]')
   const navigation = page.querySelector<HTMLElement>('[data-question-navigation]')
   const previewMessage = page.querySelector<HTMLElement>('[data-preview-message]')
+  const revealButton = page.querySelector<HTMLButtonElement>('[data-reveal-answer]')
   const continueButton = page.querySelector<HTMLButtonElement>('[data-action="continue"]')
   const skipMasteredButton = page.querySelector<HTMLButtonElement>('[data-action="skip-mastered"]')
   continueButton?.toggleAttribute('disabled', !isActive(state))
@@ -256,6 +261,7 @@ function setQuestionMode() {
   if (!state || !isActive(state)) return
   const activeId = state.queue[state.currentIndex]
   if (activeId !== id) {
+    revealButton?.setAttribute('hidden', '')
     navigation?.removeAttribute('hidden')
     lock?.setAttribute('hidden', '')
     previewMessage?.replaceChildren(`Em đang làm dở bài ôn tập ở câu ${activeId}. Chọn “Tiếp tục làm bài” để quay lại đúng tiến độ.`)
@@ -266,21 +272,23 @@ function setQuestionMode() {
   navigation?.setAttribute('hidden', '')
   lock?.setAttribute('hidden', '')
   answerArea?.removeAttribute('hidden')
+  revealButton?.toggleAttribute('hidden', !readSettings().revealAnswer || state.answers[String(id)] !== undefined)
   const savedResult = state.answers[String(id)]
-  if (savedResult !== undefined) showAnswerResult(page, savedResult)
+  if (savedResult !== undefined) showAnswerResult(page, savedResult, state.revealedIds?.includes(id) ? 'Đã xem đáp án' : undefined)
 }
 
-function showAnswerResult(page: HTMLElement, isCorrect: boolean) {
+function showAnswerResult(page: HTMLElement, isCorrect: boolean, resultLabel?: string) {
   page.querySelectorAll<HTMLButtonElement>('[data-option]').forEach((option) => {
     option.disabled = true
     if (option.dataset.option === page.dataset.correctOption) option.classList.add('correct')
     if (!isCorrect && option.getAttribute('aria-checked') === 'true') option.classList.add('wrong')
   })
   const label = page.querySelector<HTMLElement>('[data-result-label]')
-  label?.replaceChildren(isCorrect ? 'Chính xác!' : 'Chưa đúng rồi')
+  label?.replaceChildren(resultLabel ?? (isCorrect ? 'Chính xác!' : 'Chưa đúng rồi'))
   label?.classList.toggle('is-correct', isCorrect)
   label?.classList.toggle('is-wrong', !isCorrect)
   page.querySelector<HTMLElement>('[data-explanation]')?.removeAttribute('hidden')
+  page.querySelector<HTMLButtonElement>('[data-reveal-answer]')?.setAttribute('hidden', '')
   const actions = page.querySelector<HTMLElement>('[data-question-actions]')
   actions?.removeAttribute('hidden')
   requestAnimationFrame(() => actions?.scrollIntoView({ behavior: 'smooth', block: 'nearest' }))
@@ -303,6 +311,21 @@ function answerQuestion(button: HTMLButtonElement) {
   updateSessionStats(state)
   playFeedback(isCorrect)
   showAnswerResult(page, isCorrect)
+}
+
+function revealAnswer() {
+  const page = document.querySelector<HTMLElement>('[data-question-page]')
+  const state = readState()
+  if (!page || !state || !isActive(state) || !readSettings().revealAnswer) return
+  const id = Number(page.dataset.questionId)
+  if (state.queue[state.currentIndex] !== id || state.answers[String(id)] !== undefined) return
+  state.answers[String(id)] = false
+  state.revealedIds = [...(state.revealedIds ?? []), id]
+  if (!state.lastIncorrectIds.includes(id)) state.lastIncorrectIds.push(id)
+  saveState(state)
+  updateSessionStats(state)
+  playFeedback(false)
+  showAnswerResult(page, false, 'Đã xem đáp án')
 }
 
 function nextQuestion() {
@@ -369,6 +392,10 @@ document.addEventListener('click', (event) => {
     answerQuestion(option)
     return
   }
+  if (target?.closest('[data-reveal-answer]')) {
+    revealAnswer()
+    return
+  }
   if (target?.closest('[data-next]')) {
     nextQuestion()
     return
@@ -417,6 +444,11 @@ const randomOrderInput = document.querySelector<HTMLInputElement>('[data-random-
 if (randomOrderInput) randomOrderInput.checked = readSettings().randomOrder
 randomOrderInput?.addEventListener('change', () => {
   saveSettings({ ...readSettings(), randomOrder: randomOrderInput.checked })
+})
+const revealAnswerInput = document.querySelector<HTMLInputElement>('[data-reveal-setting]')
+if (revealAnswerInput) revealAnswerInput.checked = readSettings().revealAnswer
+revealAnswerInput?.addEventListener('change', () => {
+  saveSettings({ ...readSettings(), revealAnswer: revealAnswerInput.checked })
 })
 updateHome()
 updateIntro()
