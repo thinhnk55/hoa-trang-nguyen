@@ -139,7 +139,7 @@ function getSessionStats(state: PracticeState) {
     correct: values.filter(Boolean).length,
     incorrect: values.filter((answer) => !answer).length,
     remaining: Math.max(0, Math.ceil((Date.parse(state.expiresAt) - Date.now()) / 1000)),
-    questionsRemaining: Math.max(0, state.queue.length - state.currentIndex),
+    position: `${Math.min(state.currentIndex + 1, state.queue.length)}/${state.queue.length}`,
   }
 }
 
@@ -150,7 +150,7 @@ function updateSessionStats(state: PracticeState) {
   document.querySelector<HTMLElement>('[data-session-timer]')?.replaceChildren(formatTime(stats.remaining))
   document.querySelector<HTMLElement>('[data-session-correct]')?.replaceChildren(String(stats.correct))
   document.querySelector<HTMLElement>('[data-session-incorrect]')?.replaceChildren(String(stats.incorrect))
-  document.querySelector<HTMLElement>('[data-session-remaining]')?.replaceChildren(String(stats.questionsRemaining))
+  document.querySelector<HTMLElement>('[data-session-position]')?.replaceChildren(stats.position)
 }
 
 function showTimeoutMessage() {
@@ -224,7 +224,6 @@ function setQuestionMode() {
   const state = readState()
   const lock = page.querySelector<HTMLElement>('[data-preview-lock]')
   const answerArea = page.querySelector<HTMLElement>('[data-answer-area]')
-  const progress = page.querySelector<HTMLElement>('[data-question-progress]')
   const navigation = page.querySelector<HTMLElement>('[data-question-navigation]')
   const previewMessage = page.querySelector<HTMLElement>('[data-preview-message]')
   const continueButton = page.querySelector<HTMLButtonElement>('[data-action="continue"]')
@@ -249,8 +248,6 @@ function setQuestionMode() {
   navigation?.setAttribute('hidden', '')
   lock?.setAttribute('hidden', '')
   answerArea?.removeAttribute('hidden')
-  if (progress) progress.textContent = `Câu ${state.currentIndex + 1}/${state.queue.length}`
-
   const savedResult = state.answers[String(id)]
   if (savedResult !== undefined) showAnswerResult(page, savedResult)
 }
