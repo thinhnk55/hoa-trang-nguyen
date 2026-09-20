@@ -91,6 +91,14 @@ function saveSettings(settings: PracticeSettings) {
   localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings))
 }
 
+function updateActionLayouts() {
+  document.querySelectorAll<HTMLElement>('.adaptive-actions').forEach((container) => {
+    const visibleCount = Array.from(container.children).filter((child) => !child.hasAttribute('hidden')).length
+    container.classList.remove('actions-count-1', 'actions-count-2', 'actions-count-3', 'actions-count-4')
+    if (visibleCount >= 1 && visibleCount <= 4) container.classList.add(`actions-count-${visibleCount}`)
+  })
+}
+
 function selectedTimeLimitSeconds() {
   return readSettings().timeLimitMinutes * 60
 }
@@ -211,6 +219,7 @@ function updateHome() {
   if (resetButton) resetButton.hidden = !state
   continueButton.hidden = !isActive(state)
   skipMasteredButton.hidden = !state?.masteredIds.length || state.masteredIds.length === QUESTION_COUNT
+  updateActionLayouts()
   if (!state) return
   progress.hidden = false
   const mastered = state.masteredIds.length
@@ -253,6 +262,7 @@ function setQuestionMode() {
   const skipMasteredButton = page.querySelector<HTMLButtonElement>('[data-action="skip-mastered"]')
   continueButton?.toggleAttribute('hidden', !isActive(state))
   skipMasteredButton?.toggleAttribute('hidden', !state?.masteredIds.length || state.masteredIds.length === QUESTION_COUNT)
+  updateActionLayouts()
 
   if (state) {
     document.querySelector<HTMLElement>('[data-session-stats]')?.removeAttribute('hidden')
@@ -372,6 +382,7 @@ function renderResults() {
   if (stats) stats.innerHTML = `<div><b>${formatTime(elapsedSeconds)}</b><span>Thời gian</span></div><div><b>${correct}</b><span>Câu đúng</span></div><div><b>${incorrect}</b><span>Câu sai</span></div><div><b>${state.masteredIds.length}/150</b><span>Đã xác nhận đúng</span></div>`
   const retryWrong = page.querySelector<HTMLButtonElement>('[data-retry-wrong]')
   if (retryWrong && !state.lastIncorrectIds.length) retryWrong.hidden = true
+  updateActionLayouts()
 }
 
 document.addEventListener('click', (event) => {
@@ -454,3 +465,4 @@ updateHome()
 updateIntro()
 setQuestionMode()
 renderResults()
+updateActionLayouts()
