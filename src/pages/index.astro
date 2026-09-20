@@ -14,6 +14,15 @@ import { questionIds } from '../lib/questions'
       <span>Thứ tự câu hỏi</span>
       <label><input type="radio" name="order" value="normal" checked /> Từ câu 1</label>
       <label><input type="radio" name="order" value="reverse" /> Đảo thứ tự</label>
+      <label class="time-setting" title="Thời gian tối đa cho một phiên làm bài">
+        <span aria-hidden="true">⏱</span>
+        <select data-time-limit aria-label="Thời gian làm bài tối đa">
+          <option value="15">15 phút</option>
+          <option value="30" selected>30 phút</option>
+          <option value="45">45 phút</option>
+          <option value="60">60 phút</option>
+        </select>
+      </label>
     </div>
     <div class="hero-actions">
       <button class="button button-primary" type="button" data-action="restart">Làm lại toàn bộ</button>

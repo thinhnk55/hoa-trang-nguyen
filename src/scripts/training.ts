@@ -1,6 +1,8 @@
 const STORAGE_KEY = 'hocnhe.hoa-trang-nguyen.practice.v1'
+const SETTINGS_KEY = 'hocnhe.hoa-trang-nguyen.settings.v1'
 const QUESTION_COUNT = 150
 const TIME_LIMIT_SECONDS = 30 * 60
+const TIME_LIMIT_OPTIONS = [15, 30, 45, 60]
 const HOME_PATH = '/'
 const PRACTICE_PATH = '/on-tap/van-mieu-quoc-tu-giam'
 const RESULT_PATH = `${PRACTICE_PATH}/ket-qua`
@@ -15,8 +17,13 @@ type PracticeState = {
   answers: Record<string, boolean>
   startedAt: string
   expiresAt: string
+  timeLimitSeconds: number
   completedAt?: string
   endedReason?: 'completed' | 'timeout'
+}
+
+type PracticeSettings = {
+  timeLimitMinutes: number
 }
 
 function questionPath(id: number) {
@@ -36,7 +43,12 @@ function readState(): PracticeState | null {
       changed = true
     }
     if (!state.expiresAt) {
-      state.expiresAt = new Date(now + TIME_LIMIT_SECONDS * 1000).toISOString()
+      state.timeLimitSeconds = TIME_LIMIT_SECONDS
+      state.expiresAt = new Date(now + state.timeLimitSeconds * 1000).toISOString()
+      changed = true
+    }
+    if (!state.timeLimitSeconds) {
+      state.timeLimitSeconds = TIME_LIMIT_SECONDS
       changed = true
     }
     if (!state.completedAt && Date.parse(state.expiresAt) <= now) {
@@ -55,6 +67,26 @@ function saveState(state: PracticeState) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(state))
 }
 
+function readSettings(): PracticeSettings {
+  try {
+    const value = localStorage.getItem(SETTINGS_KEY)
+    if (!value) return { timeLimitMinutes: 30 }
+    const settings = JSON.parse(value) as Partial<PracticeSettings>
+    const minutes = Number(settings.timeLimitMinutes)
+    return TIME_LIMIT_OPTIONS.includes(minutes) ? { timeLimitMinutes: minutes } : { timeLimitMinutes: 30 }
+  } catch {
+    return { timeLimitMinutes: 30 }
+  }
+}
+
+function saveSettings(settings: PracticeSettings) {
+  localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings))
+}
+
+function selectedTimeLimitSeconds() {
+  return readSettings().timeLimitMinutes * 60
+}
+
 function isActive(state: PracticeState | null) {
   return Boolean(state && !state.completedAt && state.currentIndex < state.queue.length)
 }
@@ -63,6 +95,7 @@ function startPractice(order: Order = 'normal', queue?: number[]) {
   const ids = queue?.length ? queue : Array.from({ length: QUESTION_COUNT }, (_, index) => index + 1)
   const normalizedQueue = order === 'reverse' ? [...ids].reverse() : ids
   const existing = readState()
+  const timeLimitSeconds = selectedTimeLimitSeconds()
   const state: PracticeState = {
     queue: normalizedQueue,
     currentIndex: 0,
@@ -71,7 +104,8 @@ function startPractice(order: Order = 'normal', queue?: number[]) {
     lastIncorrectIds: [],
     answers: {},
     startedAt: new Date().toISOString(),
-    expiresAt: new Date(Date.now() + TIME_LIMIT_SECONDS * 1000).toISOString(),
+    expiresAt: new Date(Date.now() + timeLimitSeconds * 1000).toISOString(),
+    timeLimitSeconds,
   }
   saveState(state)
   window.location.assign(questionPath(state.queue[0]))
@@ -105,6 +139,7 @@ function getSessionStats(state: PracticeState) {
     correct: values.filter(Boolean).length,
     incorrect: values.filter((answer) => !answer).length,
     remaining: Math.max(0, Math.ceil((Date.parse(state.expiresAt) - Date.now()) / 1000)),
+    questionsRemaining: Math.max(0, state.queue.length - state.currentIndex),
   }
 }
 
@@ -115,6 +150,7 @@ function updateSessionStats(state: PracticeState) {
   document.querySelector<HTMLElement>('[data-session-timer]')?.replaceChildren(formatTime(stats.remaining))
   document.querySelector<HTMLElement>('[data-session-correct]')?.replaceChildren(String(stats.correct))
   document.querySelector<HTMLElement>('[data-session-incorrect]')?.replaceChildren(String(stats.incorrect))
+  document.querySelector<HTMLElement>('[data-session-remaining]')?.replaceChildren(String(stats.questionsRemaining))
 }
 
 function showTimeoutMessage() {
@@ -288,7 +324,7 @@ function renderResults() {
   const stats = page.querySelector<HTMLElement>('[data-result-stats]')
   if (state.endedReason === 'timeout') {
     title?.replaceChildren('Hết giờ')
-    summary?.replaceChildren('Phiên làm bài đã kết thúc vì đã hết 30 phút. Em có thể làm lại hoặc ôn các câu sai.')
+    summary?.replaceChildren(`Phiên làm bài đã kết thúc vì đã hết ${Math.round(state.timeLimitSeconds / 60)} phút. Em có thể làm lại hoặc ôn các câu sai.`)
   } else if (state.masteredIds.length === QUESTION_COUNT) {
     title?.replaceChildren('Thành tựu đã hoàn thành!')
     summary?.replaceChildren('Em đã từng trả lời đúng đủ 150 câu hỏi. Rất tuyệt vời!')
@@ -354,6 +390,15 @@ document.addEventListener('click', (event) => {
   }
 })
 
+document.addEventListener('change', (event) => {
+  const target = event.target as HTMLSelectElement | null
+  if (!target?.matches('[data-time-limit]')) return
+  const minutes = Number(target.value)
+  if (TIME_LIMIT_OPTIONS.includes(minutes)) saveSettings({ timeLimitMinutes: minutes })
+})
+
+const timeLimitSelect = document.querySelector<HTMLSelectElement>('[data-time-limit]')
+if (timeLimitSelect) timeLimitSelect.value = String(readSettings().timeLimitMinutes)
 updateHome()
 updateIntro()
 setQuestionMode()

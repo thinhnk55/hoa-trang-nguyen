@@ -25,9 +25,10 @@ if (!question) {
   >
     <div class="question-progress" data-question-progress></div>
     <div class="session-stats" data-session-stats hidden>
-      <div><span>Còn lại</span><strong data-session-timer>30:00</strong></div>
-      <div><span>Đúng</span><strong data-session-correct>0</strong></div>
-      <div><span>Sai</span><strong data-session-incorrect>0</strong></div>
+      <div title="Thời gian còn lại"><span class="stat-icon" aria-hidden="true">⏱</span><strong data-session-timer>30:00</strong></div>
+      <div title="Số câu đúng"><span class="stat-icon stat-correct" aria-hidden="true">✓</span><strong data-session-correct>0</strong></div>
+      <div title="Số câu sai"><span class="stat-icon stat-incorrect" aria-hidden="true">×</span><strong data-session-incorrect>0</strong></div>
+      <div title="Số câu còn lại"><span class="stat-icon" aria-hidden="true">…</span><strong data-session-remaining>0</strong></div>
     </div>
     <div class="timeout-message" data-timeout-message hidden>
       <strong>Hết giờ</strong>
