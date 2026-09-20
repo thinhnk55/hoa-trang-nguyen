@@ -1,0 +1,1952 @@
+[
+    {
+        "id": 1,
+        "question": "Em hãy cho biết diện tích của quần thể kiến trúc Văn Miếu - Quốc Tử Giám là bao nhiêu?",
+        "options": {
+            "A": "Hơn 5ha",
+            "B": "Hơn 6ha",
+            "C": "Hơn 7ha"
+        },
+        "answer_text": "A. Hơn 5ha",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Quần thể kiến trúc Văn Miếu - Quốc Tử Giám hiện nay có tổng diện tích 54.331 m2 (hơn 5ha), bao gồm Hồ Văn, vườn Giám và khu Nội tự."
+    },
+    {
+        "id": 2,
+        "question": "Em hãy cho biết Văn Miếu được xây dựng năm nào?",
+        "options": {
+            "A": "Năm 1067",
+            "B": "Năm 1076",
+            "C": "Năm 1070"
+        },
+        "answer_text": "C. Năm 1070",
+        "correct_option": "C",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Theo Đại Việt Sử Ký Toàn Thư, mùa thu tháng 8 năm Canh Tuất (1070), vua Lý Thánh Tông cho xây dựng Văn Miếu, đắp tượng Khổng Tử, Chu Công và Tứ phối, vẽ tượng Thất thập nhị hiền, bốn mùa cúng tế."
+    },
+    {
+        "id": 3,
+        "question": "Em hãy cho biết vị vua nào đã cho xây dựng Văn Miếu?",
+        "options": {
+            "A": "Lý Nhân Tông",
+            "B": "Lý Thánh Tông",
+            "C": "Lý Thái Tổ"
+        },
+        "answer_text": "B. Lý Thánh Tông",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Lý Thánh Tông (trị vì 1054–1072) là vị vua thứ 3 của triều Lý, người đã quyết định lập Văn Miếu vào năm 1070 để tôn vinh đạo học."
+    },
+    {
+        "id": 4,
+        "question": "Văn Miếu thờ một nhà triết học rất nổi tiếng của Trung Quốc. Em hãy cho biết tên của ông?",
+        "options": {
+            "A": "Không Tử",
+            "B": "Tôn Tử",
+            "C": "Mặc Tử"
+        },
+        "answer_text": "A. Khổng Tử",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Văn Miếu chủ yếu thờ Khổng Tử (551 TCN - 479 TCN), người sáng lập Nho giáo, cùng các vị hiền triết Nho học."
+    },
+    {
+        "id": 5,
+        "question": "Em hãy cho biết ai là người đầu tiên được học tại Văn Miếu?",
+        "options": {
+            "A": "Thái tử Lý Càn Đức (vua Lý Nhân Tông)",
+            "B": "Thái tử Lý Nhật Tôn (vua Lý Thánh Tông)",
+            "C": "Thái tử Lê Tư Thành (vua Lê Thánh Tông)"
+        },
+        "answer_text": "A. Thái tử Lý Càn Đức",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Ngay khi Văn Miếu được xây dựng (1070), Thái tử Lý Càn Đức (sau này là vua Lý Nhân Tông) lúc đó mới 5 tuổi đã được đưa vào đây để học tập."
+    },
+    {
+        "id": 6,
+        "question": "Phía trên Tam quan của Văn Miếu có đề 3 chữ Hán. Em hãy cho biết đó là ba chữ nào sau đây:",
+        "options": {
+            "A": "Văn Miếu môn",
+            "B": "Thái học môn",
+            "C": "Đông Hoa môn"
+        },
+        "answer_text": "A. Văn Miếu môn.",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Cổng chính của di tích có đề 3 chữ Hán 'Văn Miếu Môn' (Cổng Văn Miếu), thể hiện rõ tên gọi và chức năng của công trình."
+    },
+    {
+        "id": 7,
+        "question": "Em hãy cho biết Văn Miếu Môn (tức cổng Văn Miếu) được xây mấy tầng?",
+        "options": {
+            "A": "1 tầng",
+            "B": "2 tầng",
+            "C": "3 tầng"
+        },
+        "answer_text": "B. 2 tầng",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: 2 tầng."
+    },
+    {
+        "id": 8,
+        "question": "Em hãy cho biết phía trước cổng Văn Miếu là đôi rồng đá cách điệu mang phong cách kiến trúc nghệ thuật thời nào?",
+        "options": {
+            "A": "Thời Nguyễn",
+            "B": "Thời Lý",
+            "C": "Thời Lê"
+        },
+        "answer_text": "C. Thời Lê",
+        "correct_option": "C",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là C: Thời Lê."
+    },
+    {
+        "id": 9,
+        "question": "Phía sau cổng Văn Miếu có đôi rồng đá, em hãy cho biết đôi rồng đá đó mang phong cách kiến trúc nghệ thuật thời nào?",
+        "options": {
+            "A": "Thời Nguyễn",
+            "B": "Thời Lý",
+            "C": "Thời Lê"
+        },
+        "answer_text": "A. Thời Nguyễn",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: Thời Nguyễn."
+    },
+    {
+        "id": 10,
+        "question": "Em hãy cho biết Quốc tử Giám do vị vua nào cho xây dựng?",
+        "options": {
+            "A": "Vua Lê Thánh Tông",
+            "B": "Vua Lý Nhân Tông",
+            "C": "Vua Trần Thánh Tông"
+        },
+        "answer_text": "B. Lý Nhân Tông",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Năm Bính Thìn (1076), vua Lý Nhân Tông (con vua Lý Thánh Tông) đã cho lập trường Quốc Tử Giám ngay kề sau Văn Miếu, ban đầu dành riêng cho con em hoàng gia và quý tộc."
+    },
+    {
+        "id": 11,
+        "question": "Trường Quốc Tử Giám được mệnh danh là trường đại học đầu tiên của Việt Nam, em hãy cho biết trường được xây dựng năm nào?",
+        "options": {
+            "A": "Năm 1070",
+            "B": "Năm 1076",
+            "C": "Năm 1706"
+        },
+        "answer_text": "B. Năm 1076",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Được xây dựng năm 1076, Quốc Tử Giám được xem là trường đại học đầu tiên của Việt Nam, tồn tại hơn 700 năm và đào tạo ra hàng nghìn nhân tài."
+    },
+    {
+        "id": 12,
+        "question": "Em hãy cho biết học trò của trường Quốc Tử Giám xưa được gọi là gì?",
+        "options": {
+            "A": "Học sinh",
+            "B": "Giám sinh",
+            "C": "Nho sinh"
+        },
+        "answer_text": "B. Giám sinh",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: Giám sinh."
+    },
+    {
+        "id": 13,
+        "question": "Phía trước Văn Miếu có hai tấm bia, trên đó khắc 2 chữ Hán “Hạ Mã”, em hãy cho biết Hạ Mã có nghĩa là gì?",
+        "options": {
+            "A": "Lên ngựa",
+            "B": "Cưỡi ngựa",
+            "C": "Xuống ngựa"
+        },
+        "answer_text": "C. Xuống ngựa",
+        "correct_option": "C",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Biển 'Hạ Mã' (xuống ngựa) đặt ở hai bên cửa Văn Miếu quy định: bất kỳ ai đi qua, dù là quan lại hay hoàng thân quốc thích, đều phải xuống ngựa đi bộ để thể hiện sự tôn kính với các bậc thánh hiền."
+    },
+    {
+        "id": 14,
+        "question": "Ở phía trước cổng Văn Miếu có một chiếc hồ, em hãy cho biết tên của hồ đó là gì?",
+        "options": {
+            "A": "Hồ Giám",
+            "B": "Hồ Văn",
+            "C": "Hồ Thơ"
+        },
+        "answer_text": "B. Hồ Văn",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: Hồ Văn."
+    },
+    {
+        "id": 15,
+        "question": "Hồ Văn nằm phía trước Văn Miếu là nơi diễn ra các buổi bình thơ văn của các Nho sĩ kinh thành xưa, em hãy cho biết gò đất giữa hồ Văn có tên gọi là gì?",
+        "options": {
+            "A": "Ngọc Châu",
+            "B": "Kim Châu",
+            "C": "Phong Châu"
+        },
+        "answer_text": "B. Kim Châu",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: Kim Châu."
+    },
+    {
+        "id": 16,
+        "question": "Hai bên cổng Đại Trung có hai cổng nhỏ. Em hãy cho biết tên của hai cổng này?",
+        "options": {
+            "A": "Tiên học lễ - Hậu hạc văn",
+            "B": "Thành Đức và Đạt Tài",
+            "C": "Tôn sư – Trọng đạo"
+        },
+        "answer_text": "B. Thành Đức và Đạt Tài",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: Thành Đức và Đạt Tài."
+    },
+    {
+        "id": 17,
+        "question": "Có một công trình kiến trúc nằm trong di tích Văn Miếu – Quốc Tử Giám được chọn làm biểu tượng của Hà Nội, em hãy cho biết đó là công trình kiến trúc nào?",
+        "options": {
+            "A": "Khuê Văn Các",
+            "B": "Nhà Đại Bái",
+            "C": "Cổng Đại Trung"
+        },
+        "answer_text": "A. Khuê Văn Các",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: Khuê Văn Các."
+    },
+    {
+        "id": 18,
+        "question": "Em hãy cho biết Khuê Văn Các tại Văn Miếu - Quốc Tử Giám được xây dựng vào năm nào?",
+        "options": {
+            "A": "năm 1605",
+            "B": "năm 1705",
+            "C": "năm 1805"
+        },
+        "answer_text": "C. Năm 1805",
+        "correct_option": "C",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Khuê Văn Các được xây dựng năm 1805 dưới thời Nguyễn. Đây là công trình kiến trúc độc đáo, biểu tượng của thủ đô Hà Nội."
+    },
+    {
+        "id": 19,
+        "question": "Giám? Em hãy cho biết ai là người cho xây dựng Khuê Văn Các tại Văn Miếu - Quốc Tử",
+        "options": {
+            "A": "Tổng trấn Bắc thành Nguyễn Văn Thành",
+            "B": "Tổng đốc Hà Nội Hoàng Diệu",
+            "C": "Phương đình Nguyễn Văn Siêu"
+        },
+        "answer_text": "A. Tổng trấn Bắc thành Nguyễn Văn Thành",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: Tổng trấn Bắc thành Nguyễn Văn Thành."
+    },
+    {
+        "id": 20,
+        "question": "Cửa sổ tròn của Khuê Văn Các tại dị tích Văn Miếu – Quốc Tử Giám có ý nghĩa rất đẹp, em hãy cho biết ý nghĩa đó là gì?",
+        "options": {
+            "A": "Mặt trời",
+            "B": "Sao Khuê",
+            "C": "Mặt trăng"
+        },
+        "answer_text": "B. Sao Khuê (giải thích: Là ngôi sao sáng nhất trên bầu trời và được tạo nên bởi 16 vì sao nhỏ, sắp xếp thành hình chữ Văn trong tiếng Hán)",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Khuê Văn Các mang ý nghĩa là 'gác vẻ đẹp của sao Khuê'. Sao Khuê là ngôi sao chủ quản việc văn chương, học thuật theo quan niệm phương Đông."
+    },
+    {
+        "id": 21,
+        "question": "Em hãy cho biết Khuê Văn Các tại khu di tích Văn Miếu – Quốc Tử Giám hiện nay được sơn màu gì?",
+        "options": {
+            "A": "Màu đỏ",
+            "B": "Màu vàng",
+            "C": "Màu xanh"
+        },
+        "answer_text": "A. Màu đỏ",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: Màu đỏ."
+    },
+    {
+        "id": 22,
+        "question": "Em hãy cho biết tên của hai cổng nhỏ nằm hai bên Khuê Văn Các?",
+        "options": {
+            "A": "Thành Đức và Đạt Tài",
+            "B": "Bí Văn và Súc Văn",
+            "C": "Kim Thanh và Ngọc Chấn"
+        },
+        "answer_text": "B. Bí Văn và Súc Văn",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: Bí Văn và Súc Văn."
+    },
+    {
+        "id": 23,
+        "question": "Có bao nhiêu bia tiến sĩ ở Văn Miếu – Quốc Tử Giám?",
+        "options": {
+            "A": "82 bia",
+            "B": "72 bia",
+            "C": "92 bia"
+        },
+        "answer_text": "A. 82 bia",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Hiện tại Văn Miếu - Quốc Tử Giám còn lưu giữ được 82 tấm bia Tiến sĩ tương ứng với 82 khoa thi (từ 1442 đến 1779)."
+    },
+    {
+        "id": 24,
+        "question": "82 bia tiến sĩ tại Văn Miếu - Quốc Tử Giám Hà Nội được UNESCO công nhận là di sản tư liệu thế giới vào năm nào?",
+        "options": {
+            "A": "2010",
+            "B": "2011",
+            "C": "2012"
+        },
+        "answer_text": "B. 2011",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Ngày 9/3/2010, 82 bia Tiến sĩ được UNESCO công nhận là Di sản tư liệu thế giới khu vực châu Á - Thái Bình Dương, và đến tháng 5/2011 được công nhận ở phạm vi toàn cầu."
+    },
+    {
+        "id": 25,
+        "question": "Em cho biết bia Tiến sĩ ở Văn Miếu – Quốc Tử Giám được đặt trên lưng con gì?",
+        "options": {
+            "A": "Rùa",
+            "B": "Rồng",
+            "C": "Nghê"
+        },
+        "answer_text": "A. Rùa",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Bia Tiến sĩ được đặt trên lưng rùa đá. Trong văn hóa Việt Nam, rùa là một trong tứ linh (Long, Lân, Quy, Phụng), tượng trưng cho sự trường tồn, vĩnh cửu, ngụ ý sự nghiệp học hành và tên tuổi các vị tiến sĩ sẽ lưu truyền mãi mãi."
+    },
+    {
+        "id": 26,
+        "question": "Trên bia tiến sĩ ở Văn Miếu - Quốc Tử Giám có khắc họ tên, quê quán của bao nhiêu vị tiến sĩ?",
+        "options": {
+            "A": "1309",
+            "B": "1307",
+            "C": "1037"
+        },
+        "answer_text": "B. 1307",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: 1307."
+    },
+    {
+        "id": 27,
+        "question": "Em cho biết vị vua nào bắt đầu cho dựng bia tiến sĩ?",
+        "options": {
+            "A": "Lý Thánh Tông",
+            "B": "Trần Thánh Tông",
+            "C": "Lê Thánh Tông"
+        },
+        "answer_text": "C. Lê Thánh Tông",
+        "correct_option": "C",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là C: Lê Thánh Tông."
+    },
+    {
+        "id": 28,
+        "question": "Em cho biết bia tiến sĩ được bắt đầu dựng từ năm nào?",
+        "options": {
+            "A": "Năm 1942",
+            "B": "Năm 1975",
+            "C": "Năm 1484"
+        },
+        "answer_text": "C. Năm 1484",
+        "correct_option": "C",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Năm Giáp Thìn (1484), vua Lê Thánh Tông bắt đầu cho dựng bia Tiến sĩ để tôn vinh những người đỗ đạt cao từ khoa thi 1442 trở đi."
+    },
+    {
+        "id": 29,
+        "question": "Khoa thi đầu tiên được dựng bia tiến sĩ là khoa thi năm nào?",
+        "options": {
+            "A": "Năm 1442",
+            "B": "Năm 1802",
+            "C": "Năm 1010"
+        },
+        "answer_text": "A. Năm 1442",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: Năm 1442."
+    },
+    {
+        "id": 30,
+        "question": "Khoa thi cuối cùng được dựng bia tiến sĩ ở Văn Miếu – Quốc tử Giám là khoa thi năm nào?",
+        "options": {
+            "A": "Năm 1778",
+            "B": "Năm 1779",
+            "C": "Năm 1776"
+        },
+        "answer_text": "B. Năm 1779",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: Năm 1779."
+    },
+    {
+        "id": 31,
+        "question": "Trong 82 khoa thi tiến sĩ được dựng bia ở Văn Miếu – Quốc Tử Giám, khoa thi lấy đỗ được nhiều nhất là bao nhiêu người?",
+        "options": {
+            "A": "60",
+            "B": "62",
+            "C": "82"
+        },
+        "answer_text": "B. 62",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: 62."
+    },
+    {
+        "id": 32,
+        "question": "Trong 82 khoa thi tiến sĩ được dựng bia ở Văn Miếu – Quốc Tử Giám, khoa thi lấy đỗ ít nhất là bao nhiêu người?",
+        "options": {
+            "A": "3",
+            "B": "1",
+            "C": "5"
+        },
+        "answer_text": "A. 3",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: 3."
+    },
+    {
+        "id": 33,
+        "question": "Em hãy cho biết 82 bia tiến sĩ ở Văn Miếu – Quốc Tử Giám được làm bằng chất liệu gì?",
+        "options": {
+            "A": "Gỗ",
+            "B": "Đá xanh",
+            "C": "Xi măng"
+        },
+        "answer_text": "B. Đá xanh",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: Đá xanh."
+    },
+    {
+        "id": 34,
+        "question": "Em cho biết loại đá xanh dùng để dựng bia Tiến sĩ được khai thác ở đâu?",
+        "options": {
+            "A": "Thanh Hóa",
+            "B": "Nghệ An",
+            "C": "Ninh Bình"
+        },
+        "answer_text": "A. Thanh Hóa",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: Thanh Hóa."
+    },
+    {
+        "id": 35,
+        "question": "Em cho biết chữ được khắc trên bia Tiến sĩ ở Văn Miếu - Quốc Tử Giám là loại chữ gì?",
+        "options": {
+            "A": "Chữ Quốc ngữ.",
+            "B": "Chữ Nhật.",
+            "C": "Chữ Hán"
+        },
+        "answer_text": "C. Chữ Hán",
+        "correct_option": "C",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là C: Chữ Hán."
+    },
+    {
+        "id": 36,
+        "question": "Trên 82 bia Tiến sĩ tại Văn Miếu – Quốc Tử Giám bên cạnh khắc họ tên, quê quán người đỗ Tiến sĩ còn có khắc điều gì?",
+        "options": {
+            "A": "Bài thơ",
+            "B": "Bài ký",
+            "C": "Bài phú"
+        },
+        "answer_text": "B. Bài ký",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: Bài ký."
+    },
+    {
+        "id": 37,
+        "question": "Em hãy cho biết tên chiếc giếng nằm ở giữa khu vườn bia Tiến sĩ di tích Văn Miếu – Quốc Tử Giám là gì?",
+        "options": {
+            "A": "Giếng Văn",
+            "B": "Giếng Thiên Quang",
+            "C": "Giếng Văn Miếu"
+        },
+        "answer_text": "B. Giếng Thiên Quang",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: Giếng Thiên Quang."
+    },
+    {
+        "id": 38,
+        "question": "của nó? Trong Văn Miếu - Quốc Tử Giám có giếng Thiên Quang. Em hãy cho biết vị trí",
+        "options": {
+            "A": "Giữa vườn bia Tiến sĩ.",
+            "B": "Phía trước Văn Miếu - Quốc Tử Giám",
+            "C": "Bên trái Khuê Văn Các"
+        },
+        "answer_text": "A. Giữa vườn bia Tiến sĩ.",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: Giữa vườn bia Tiến sĩ.."
+    },
+    {
+        "id": 39,
+        "question": "Em hãy cho biết giếng Thiên Quang trong Văn Miếu - Quốc Tử Giám có hình gì?",
+        "options": {
+            "A": "Hình tròn",
+            "B": "Hình vuông",
+            "C": "Hình chữ nhật"
+        },
+        "answer_text": "B. Hình vuông",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: Hình vuông."
+    },
+    {
+        "id": 40,
+        "question": "Em hãy cho biết khoa thi đầu tiên của nước ta được tổ chức vào năm nào?",
+        "options": {
+            "A": "1076",
+            "B": "1075",
+            "C": "1077"
+        },
+        "answer_text": "B. 1075",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: 1075."
+    },
+    {
+        "id": 41,
+        "question": "1075? Ai là người cho tổ chức khoa thi đầu tiên trong lịch sử khoa cử nước ta vào năm",
+        "options": {
+            "A": "Vua Lý Thánh Tông",
+            "B": "Vua Lý Nhân Tông",
+            "C": "Vua Lê Thánh Tông"
+        },
+        "answer_text": "B. Vua Lý Nhân Tông",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: Vua Lý Nhân Tông."
+    },
+    {
+        "id": 42,
+        "question": "Em cho biết ai là người đỗ đầu khoa thi đầu tiên tổ chức năm 1075 ?",
+        "options": {
+            "A": "Lê Văn Hưu",
+            "B": "Lê Quát",
+            "C": "Lê Văn Thịnh"
+        },
+        "answer_text": "C. Lê Văn Thịnh",
+        "correct_option": "C",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Lê Văn Thịnh là người đỗ đầu khoa thi Minh kinh bác học năm 1075 (khoa thi đầu tiên của Đại Việt). Dù lúc đó chưa gọi là Trạng nguyên, ông được xem là thủ khoa đầu tiên của lịch sử khoa cử Việt Nam."
+    },
+    {
+        "id": 43,
+        "question": "Vua Lý Nhân Tông là người đã cho mở khoa thi đầu tiên vào năm 1075, em cho biết ông là con trai của vị vua nào?",
+        "options": {
+            "A": "Vua Lý Thái Tổ",
+            "B": "Vua Lý Thần Tông",
+            "C": "Vua Lý Thánh Tông"
+        },
+        "answer_text": "C. Vua Lý Thánh Tông",
+        "correct_option": "C",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là C: Vua Lý Thánh Tông."
+    },
+    {
+        "id": 44,
+        "question": "Em hãy cho biết tên kỳ thi đầu tiên sĩ tử phải trải qua?",
+        "options": {
+            "A": "Thi Hương",
+            "B": "Thi Thơ",
+            "C": "Thi Phú"
+        },
+        "answer_text": "A. Thi Hương",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: Thi Hương."
+    },
+    {
+        "id": 45,
+        "question": "Em hãy cho biết tên kỳ thi thứ hai sĩ tử phải trải qua?",
+        "options": {
+            "A": "Thi Chính tả",
+            "B": "Thi Hội",
+            "C": "Thi Toán"
+        },
+        "answer_text": "B. Thi Hội",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: Thi Hội."
+    },
+    {
+        "id": 46,
+        "question": "Kỳ thi cuối cùng mà sĩ tử phải trải qua được tổ chức tại cung điện của nhà vua, em cho biết tên gọi của kỳ thi này?",
+        "options": {
+            "A": "Thi Hương",
+            "B": "Thi Đình",
+            "C": "Thi Ám tả"
+        },
+        "answer_text": "B. Thi Đình",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: Thi Đình."
+    },
+    {
+        "id": 47,
+        "question": "Em hãy cho biết ba danh hiệu Tiến sĩ cao nhất được gọi theo thứ tự là gì?",
+        "options": {
+            "A": "Bảng nhăn, Thám hoa, Trạng nguyên",
+            "B": "Trạng nguyên, Thám hoa, Bảng nhãn",
+            "C": "Trạng nguyên, Bảng nhãn, Thám hoa"
+        },
+        "answer_text": "C. Trạng nguyên, Bảng nhãn, Thám hoa",
+        "correct_option": "C",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là C: Trạng nguyên, Bảng nhãn, Thám hoa."
+    },
+    {
+        "id": 48,
+        "question": "Em cho biết vị tiến sĩ trẻ tuổi nhất là ai?",
+        "options": {
+            "A": "Lê Văn Thịnh",
+            "B": "Nguyễn Hiền",
+            "C": "Lương Thế Vinh"
+        },
+        "answer_text": "B. Nguyễn Hiền",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Nguyễn Hiền đỗ Trạng nguyên năm 1247 khi mới 13 tuổi (tính theo tuổi mụ), trở thành Trạng nguyên trẻ nhất trong lịch sử Việt Nam."
+    },
+    {
+        "id": 49,
+        "question": "Quách Đồng Dần là người đỗ Tiến sĩ cao tuổi nhất, em cho biết ông đỗ Tiến sĩ khi đã bao nhiêu tuổi?",
+        "options": {
+            "A": "68 tuổi",
+            "B": "67 tuổi",
+            "C": "69 tuổi"
+        },
+        "answer_text": "A. 68 tuổi",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: 68 tuổi."
+    },
+    {
+        "id": 50,
+        "question": "Em cho biết người đi thi cao tuổi nhất là ai?",
+        "options": {
+            "A": "Đoàn Tử Quang",
+            "B": "Quách Đồng Dần",
+            "C": "Lê Quý Đôn"
+        },
+        "answer_text": "A. Đoàn Tử Quang",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Đoàn Tử Quang (1818-1928) là người đi thi cao tuổi nhất. Ông đỗ Cử nhân năm 1900 khi đã 82 tuổi."
+    },
+    {
+        "id": 51,
+        "question": "Em cho biết vị tiến sĩ trẻ tuổi nhất đỗ khi bao nhiêu tuổi?",
+        "options": {
+            "A": "12 tuổi",
+            "B": "13 tuổi",
+            "C": "14 tuổi"
+        },
+        "answer_text": "B. 13 tuổi",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: 13 tuổi."
+    },
+    {
+        "id": 52,
+        "question": "Em cho biết Tiến sĩ sau khi đỗ được phân làm mấy hạng?",
+        "options": {
+            "A": "3 hạng",
+            "B": "4 hạng",
+            "C": "5 hạng"
+        },
+        "answer_text": "A. 3 hạng",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: 3 hạng."
+    },
+    {
+        "id": 53,
+        "question": "Danh hiệu đỗ cao nhất của kỳ thi tiến sĩ được gọi là gì?",
+        "options": {
+            "A": "Bảng nhãn",
+            "B": "Trạng nguyên",
+            "C": "Thám hoa"
+        },
+        "answer_text": "B. Trạng nguyên",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: Trạng nguyên."
+    },
+    {
+        "id": 54,
+        "question": "Người đỗ đầu ba kỳ thi Hương, thi Hội, thi Đình được gọi là gì?",
+        "options": {
+            "A": "Tam nguyên",
+            "B": "Tam khôi",
+            "C": "Đình nguyên"
+        },
+        "answer_text": "A. Tam nguyên",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: Tam nguyên."
+    },
+    {
+        "id": 55,
+        "question": "Em cho biết Lưỡng quốc Trạng nguyên có nghĩa là gì?",
+        "options": {
+            "A": "Trạng nguyên của 3 nước",
+            "B": "Trạng nguyên của 4 nước",
+            "C": "Trạng nguyên của 2 nước"
+        },
+        "answer_text": "C. Trạng nguyên của 2 nước",
+        "correct_option": "C",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Lưỡng quốc Trạng nguyên là danh hiệu phong cho người đỗ Trạng nguyên ở Việt Nam và khi đi sứ được hoàng đế Trung Hoa công nhận hoặc phong tặng danh hiệu Trạng nguyên của cả nước họ (ví dụ: Mạc Đĩnh Chi, Nguyễn Trực)."
+    },
+    {
+        "id": 56,
+        "question": "Dưới thời Lê người trúng 4 kỳ của khoa thi Hương được gọi là gì?",
+        "options": {
+            "A": "Cử nhân",
+            "B": "Hương cống",
+            "C": "Tú tài"
+        },
+        "answer_text": "B. Hương cống",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: Hương cống."
+    },
+    {
+        "id": 57,
+        "question": "Dưới thời Lê người trúng 3 kỳ của khoa thi Hương được gọi là gì?",
+        "options": {
+            "A": "Sinh đồ",
+            "B": "Cử nhân",
+            "C": "Hương cống"
+        },
+        "answer_text": "A. Sinh đồ",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: Sinh đồ."
+    },
+    {
+        "id": 59,
+        "question": "“Cử nhân” là chỉ người đỗ 4 kỳ khoa thi Hương, em cho biết đây là cách gọi ở triều đại nào?",
+        "options": {
+            "A": "Triều Nguyễn",
+            "B": "Triều Lê",
+            "C": "Triều Trần"
+        },
+        "answer_text": "A. Triều Nguyễn",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: Triều Nguyễn."
+    },
+    {
+        "id": 59,
+        "question": "Kể tên bài thi đầu tiên của kỳ thi Hương mà sĩ tử phải làm?",
+        "options": {
+            "A": "Kinh nghĩa.",
+            "B": "Toán",
+            "C": "Làm thơ"
+        },
+        "answer_text": "A. Kinh nghĩa",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: Kinh nghĩa.."
+    },
+    {
+        "id": 60,
+        "question": "Dưới thời Nguyễn trúng 3 kỳ khoa thi Hương được gọi là gì?",
+        "options": {
+            "A": "Hương cống",
+            "B": "Sinh đồ",
+            "C": "Tú tài"
+        },
+        "answer_text": "C. Tú tài",
+        "correct_option": "C",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là C: Tú tài."
+    },
+    {
+        "id": 61,
+        "question": "Em cho biết người đỗ đầu kỳ thi Hương được gọi là gì?",
+        "options": {
+            "A": "Giải nguyên",
+            "B": "Tú tài",
+            "C": "Sinh đồ"
+        },
+        "answer_text": "A. Giải nguyên",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: Giải nguyên."
+    },
+    {
+        "id": 62,
+        "question": "Người đỗ đầu kỳ thi Hội được gọi là gì?",
+        "options": {
+            "A": "Tiến sĩ",
+            "B": "Cử nhân",
+            "C": "Hội nguyên"
+        },
+        "answer_text": "C. Hội nguyên",
+        "correct_option": "C",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là C: Hội nguyên."
+    },
+    {
+        "id": 63,
+        "question": "Người đỗ đầu kỳ thi Đình được gọi là gì?",
+        "options": {
+            "A": "Bảng nhãn",
+            "B": "Cử nhân",
+            "C": "Đình nguyên"
+        },
+        "answer_text": "C. Đình nguyên",
+        "correct_option": "C",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là C: Đình nguyên."
+    },
+    {
+        "id": 64,
+        "question": "Thi Hội được tổ chức ở đâu?",
+        "options": {
+            "A": "Kinh đô",
+            "B": "Xã",
+            "C": "Huyện"
+        },
+        "answer_text": "A. Kinh đô",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: Kinh đô."
+    },
+    {
+        "id": 65,
+        "question": "Em cho biết kỳ thi Đình sĩ tử phải trải qua mấy kỳ?",
+        "options": {
+            "A": "1",
+            "B": "2",
+            "C": "3"
+        },
+        "answer_text": "A.1",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: 1."
+    },
+    {
+        "id": 66,
+        "question": "Em cho biết tại kỳ thi Đình, ai là người hỏi thi sĩ tử?",
+        "options": {
+            "A": "Quan Tể tướng",
+            "B": "b. Nhà vua",
+            "C": "Quan Ngự sử"
+        },
+        "answer_text": "B. Nhà vua",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: b. Nhà vua."
+    },
+    {
+        "id": 67,
+        "question": "Trong 82 khoa thi tiến sĩ được dựng bia ở Văn Miếu – Quốc Tử Giám, khoa thi năm nào có số sĩ tử tham gia đông nhất?",
+        "options": {
+            "A": "1442",
+            "B": "1463",
+            "C": "1640"
+        },
+        "answer_text": "C. 1640 (6000 sĩ tử)",
+        "correct_option": "C",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là C: 1640."
+    },
+    {
+        "id": 68,
+        "question": "Em cho biết tên hai thầy trò cùng đỗ khoa thi năm 1442?",
+        "options": {
+            "A": "Trịnh Thiết Trường, Nguyễn Nguyên Chẩn",
+            "B": "Trịnh Thiết Trường, Lê Văn Hưu",
+            "C": "Trịnh Thiết Trường, Lê Quý Đôn"
+        },
+        "answer_text": "A. Trịnh Thiết Trường, Nguyễn Nguyên Chẩn",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: Trịnh Thiết Trường, Nguyễn Nguyên Chẩn."
+    },
+    {
+        "id": 69,
+        "question": "Hai cha con cùng đỗ tiến sĩ một khoa họ là ai?",
+        "options": {
+            "A": "Ngô Thì Nhâm, Ngô Thì Sĩ",
+            "B": "Lê Phú Thứ, Lê Quý Đôn",
+            "C": "Ngô Trí Tri, Ngô Trí Hòa"
+        },
+        "answer_text": "C. Ngô Trí Tri, Ngô Trí Hòa",
+        "correct_option": "C",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là C: Ngô Trí Tri, Ngô Trí Hòa."
+    },
+    {
+        "id": 70,
+        "question": "Khoa thi năm nào có hai cha con cùng thi đỗ?",
+        "options": {
+            "A": "1592",
+            "B": "1775",
+            "C": "1752"
+        },
+        "answer_text": "A. 1592",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: 1592."
+    },
+    {
+        "id": 71,
+        "question": "Em cho biết tên vị tiến sĩ đỗ khoa thi năm 1442 đã được coi là ông tổ nghề in của nước ta?",
+        "options": {
+            "A": "Lương Thế Vinh",
+            "B": "Lương Như Hộc",
+            "C": "Phùng Khắc Khoan"
+        },
+        "answer_text": "B. Lương Như Hộc",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: Lương Như Hộc."
+    },
+    {
+        "id": 72,
+        "question": "Trên bia tiến sĩ khoa thi 1442 có khắc tên vị tiến sĩ là một trong những soạn giả của bộ sách “Đại Việt sử ký toàn thư , em cho biết ông là ai?",
+        "options": {
+            "A": "Ngô Sĩ Liên",
+            "B": "Phan Huy Chú",
+            "C": "Lê Văn Hưu"
+        },
+        "answer_text": "A. Ngô Sĩ Liên",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: Ngô Sĩ Liên."
+    },
+    {
+        "id": 73,
+        "question": "Trên bia tiến sĩ khoa thi 1463 có khắc tên vị Trạng nguyên rất giỏi toán, ông được dân gian gọi là Trạng Lường. Em cho biết ông là ai?",
+        "options": {
+            "A": "Mạc Đĩnh Chi",
+            "B": "Vũ Duệ",
+            "C": "Lương Thế Vinh"
+        },
+        "answer_text": "C. Lương Thế Vinh",
+        "correct_option": "C",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là C: Lương Thế Vinh."
+    },
+    {
+        "id": 74,
+        "question": "Tiến sĩ Lê Quý Đôn khi còn nhỏ đã làm một bài thơ để tạ lỗi với cha. Em cho biết bài trong bài thơ này ông nhắc đến loài vật nào?",
+        "options": {
+            "A": "Hồ",
+            "B": "Rắn",
+            "C": "Rồng"
+        },
+        "answer_text": "B. Rắn",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Bài thơ 'Rắn đầu biếng học' (hay Bài thơ Rắn) tương truyền do Lê Quý Đôn làm khi còn nhỏ để tạ lỗi với cha, trong đó mỗi câu đều chứa tên một loài rắn."
+    },
+    {
+        "id": 75,
+        "question": "Ông người xã Phùng Xá huyện Thạch Thất – nay là thôn Bùng xã Phùng Xá huyện Thạch Thất, Hà Nội. Ông đỗ Hoàng Giáp những vẫn được dân gian gọi là Trạng Bùng. Em hãy cho biết ông là ai?",
+        "options": {
+            "A": "Phùng Khắc Khoan",
+            "B": "Đào Sư Tích",
+            "C": "Nguyễn Quang Bật"
+        },
+        "answer_text": "A. Phùng Khắc Khoan",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Phùng Khắc Khoan (1528-1613), quê ở làng Bùng (Phùng Xá, Thạch Thất), đỗ Hoàng giáp khoa Canh Thìn (1580), được dân gian gọi thân mật là Trạng Bùng."
+    },
+    {
+        "id": 76,
+        "question": "Bia tiến sĩ khoa thi 1775 có khắc tên vị tiến sĩ, người đã giúp vua Quang Trung - Nguyễn Huệ chiến thắng quân Thanh trong trận Ngọc Hồi - Đống Đa. Em cho biết ông là ai?",
+        "options": {
+            "A": "Phan Huy ích",
+            "B": "Ngô Thì Nhậm",
+            "C": "Phạm Đình Dư"
+        },
+        "answer_text": "B. Ngô Thì Nhậm",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: Ngô Thì Nhậm."
+    },
+    {
+        "id": 77,
+        "question": "Vị Trạng nguyên đầu tiên được khắc tên trên bia tiến sĩ ở Văn Miếu – Quốc Tử Giám Thăng Long là ai?",
+        "options": {
+            "A": "Nguyễn Trãi",
+            "B": "Nguyễn Huệ",
+            "C": "Nguyễn Trực"
+        },
+        "answer_text": "C. Nguyễn Trực",
+        "correct_option": "C",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là C: Nguyễn Trực."
+    },
+    {
+        "id": 78,
+        "question": "Nội? Vị tiến sĩ cuối cùng được khắc tên trên bia tiến sĩ ở Văn Miếu – Quốc Tử Giám Hà",
+        "options": {
+            "A": "Phan Huy Ôn",
+            "B": "Ngô Thì Sĩ",
+            "C": "Phan Huy Chú"
+        },
+        "answer_text": "A. Phan Huy Ôn",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: Phan Huy Ôn."
+    },
+    {
+        "id": 79,
+        "question": "Ở Hà Nội có một đường phố mang tên vị Tiến sĩ người làng Yên Đỗ, ông đạt danh hiệu Tam nguyên, em cho biết ông là ai?",
+        "options": {
+            "A": "Nguyễn Khuyến",
+            "B": "Nguyễn Trãi",
+            "C": "Cao Bá Quát"
+        },
+        "answer_text": "A. Nguyễn Khuyến",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: Nguyễn Khuyến."
+    },
+    {
+        "id": 80,
+        "question": "Trong lịch sử khoa cử Việt Nam có bao nhiêu người đạt danh hiệu Trạng nguyên?",
+        "options": {
+            "A": "56",
+            "B": "46",
+            "C": "36"
+        },
+        "answer_text": "B. 46",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: 46."
+    },
+    {
+        "id": 81,
+        "question": "Trong số các vị Tiến sĩ được khắc tên trên bia tiến sĩ ở Văn Miếu – Quốc Tử Giám có bao nhiêu người đạt danh hiệu Trạng nguyên?",
+        "options": {
+            "A": "17",
+            "B": "18",
+            "C": "19"
+        },
+        "answer_text": "B. 18",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: 18."
+    },
+    {
+        "id": 82,
+        "question": "Lương Như Hộc, người thôn Thanh Liễu xã Tân Hưng huyện Gia Lộc tỉnh Hải Dương. Ông là người có công dạy dân làng nghề khắc ván in và được coi là ông tổ nghề in mộc bản của nước ta. Ông đỗ tiến sĩ khoa thi 1442, em cho biết ông đỗ danh hiệu gì?",
+        "options": {
+            "A": "Thám hoa",
+            "B": "Bảng nhãn",
+            "C": "Hoàng giáp"
+        },
+        "answer_text": "A. Thám hoa",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: Thám hoa."
+    },
+    {
+        "id": 83,
+        "question": "Tiến sĩ Phùng Khắc Khoan đã từng giữ chức vụ gì tại Quốc Tử Giám?",
+        "options": {
+            "A": "Tế Tửu",
+            "B": "Tư nghiệp",
+            "C": "Giáo thụ"
+        },
+        "answer_text": "A. Tế tửu",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: Tế Tửu."
+    },
+    {
+        "id": 84,
+        "question": "Hai cha con người làng Tả Thanh Oai, huyện Thanh Trì Hà Nội, cha con đều đỗ tiến sĩ và ra làm quan một triều. Họ là ai?",
+        "options": {
+            "A": "Ngô Thì Sĩ (cha), Ngô Thì Nhậm (con).",
+            "B": "Lê Phú Thứ (cha), Lê Quý Đôn (con).",
+            "C": "Nguyễn Phi Khanh (cha), Nguyễn Trãi (con)"
+        },
+        "answer_text": "A. Ngô Thì Sĩ (cha), Ngô Thì Nhậm (con)",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: Ngô Thì Sĩ (cha), Ngô Thì Nhậm (con).."
+    },
+    {
+        "id": 85,
+        "question": "Bài ký khắc trên bia tiến sĩ khoa Nhâm Tuất niên hiệu Đại Bảo 3 (1442) có đoạn viết: “ Hiền tài là nguyên khí của quốc gia, nguyên khí vững thì thế nước mạnh và thịnh, nguyên khí kém thì thế nước yếu và suy, cho nên các đấng thánh để minh vương không ai không chăm lo xây dựng nhân tài”. Em cho biết ai là tác giả bài ký này?",
+        "options": {
+            "A": "Lê Thánh Tông",
+            "B": "Thân Nhân Trung",
+            "C": "Lý Thánh Tông"
+        },
+        "answer_text": "B. Thân Nhân Trung",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Câu nói nổi tiếng 'Hiền tài là nguyên khí của quốc gia...' được trích trong bài ký do Thân Nhân Trung soạn năm 1484, khắc trên tấm bia Tiến sĩ đầu tiên (khoa thi 1442)."
+    },
+    {
+        "id": 86,
+        "question": "Lê Quý Đôn đỗ Đình nguyên khoa thi năm 1752, em cho biết ông đỗ danh hiệu Tiến sĩ gì?",
+        "options": {
+            "A": "Bảng nhãn",
+            "B": "Thám hoa",
+            "C": "Trạng nguyên"
+        },
+        "answer_text": "A. Bảng nhãn",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: Bảng nhãn."
+    },
+    {
+        "id": 87,
+        "question": "Tiến sĩ Lê Quý Đôn đã từng giữ chức vụ gì ở Quốc Tử Giám?",
+        "options": {
+            "A": "Tư nghiệp",
+            "B": "Trực giảng",
+            "C": "Huấn đạo"
+        },
+        "answer_text": "A. Tư nghiệp",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: Tư nghiệp."
+    },
+    {
+        "id": 88,
+        "question": "Ngô Sĩ Liên, người xã Chúc Sơn huyện Chương Đức – nay là thôn Ngọc Giả xã Ngọc Hoà huyện Chương Mỹ, Hà Nội. Ông đỗ tiến sĩ khoa thi 1442, ông là một trong những soạn giả của bộ sách chính sử gì?",
+        "options": {
+            "A": "Đại Việt sử ký",
+            "B": "Đại Việt sử ký toàn thư",
+            "C": "Lịch triều hiến chương loại chí"
+        },
+        "answer_text": "B. Đại Việt sử ký toàn thư",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: Đại Việt sử ký toàn thư."
+    },
+    {
+        "id": 89,
+        "question": "Tiến sĩ Ngô Sĩ Liên đã giữ chức vụ gì ở Quốc Tử Giám?",
+        "options": {
+            "A": "Trợ giáo",
+            "B": "Huấn đạo",
+            "C": "Tư nghiệp"
+        },
+        "answer_text": "C. Tư nghiệp",
+        "correct_option": "C",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là C: Tư nghiệp."
+    },
+    {
+        "id": 90,
+        "question": "Xuân quận công Nguyễn Nghiễm từng giữ chức vụ gì ở trường Quốc Tử Giám?",
+        "options": {
+            "A": "Tế Tửu",
+            "B": "Tư nghiệp",
+            "C": "Giáo thụ"
+        },
+        "answer_text": "A. Tế tửu",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: Tế Tửu."
+    },
+    {
+        "id": 91,
+        "question": "Dưới thời Lê người đỗ Tiến sĩ được dự lễ xướng danh ở đâu?",
+        "options": {
+            "A": "Văn Miếu",
+            "B": "Quốc Tử Giám",
+            "C": "Trong sân rồng"
+        },
+        "answer_text": "C. Trong sân rồng",
+        "correct_option": "C",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là C: Trong sân rồng."
+    },
+    {
+        "id": 92,
+        "question": "Người đỗ Tiến sĩ được nhà vua ban tặng gì?",
+        "options": {
+            "A": "Sách, vở",
+            "B": "Mũ, áo, đai",
+            "C": "Bút, mực"
+        },
+        "answer_text": "B. Mũ, áo, đai",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: Mũ, áo, đai."
+    },
+    {
+        "id": 93,
+        "question": "Em cho biết đỗ danh hiệu gì sẽ được nhà Vua ban yến tiệc ở vườn Quỳnh Lâm?",
+        "options": {
+            "A": "Cử nhân",
+            "B": "Tiến sĩ",
+            "C": "Đáp án cả a và b"
+        },
+        "answer_text": "B. Tiến sĩ",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: Tiến sĩ."
+    },
+    {
+        "id": 94,
+        "question": "Em hãy cho biết người đỗ Tam khôi được vua cho đi chơi phố mấy ngày?",
+        "options": {
+            "A": "1 ngày",
+            "B": "2 ngày",
+            "C": "3 ngày"
+        },
+        "answer_text": "C. 3 ngày",
+        "correct_option": "C",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là C: 3 ngày."
+    },
+    {
+        "id": 95,
+        "question": "Em cho biết dưới triều Mạc có bao nhiêu khoa thi được dựng bia Tiến sĩ tại Văn Miếu – Quốc Tử Giám?",
+        "options": {
+            "A": "1",
+            "B": "2",
+            "C": "3"
+        },
+        "answer_text": "A.1",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: 1."
+    },
+    {
+        "id": 96,
+        "question": "Dưới triều Nguyễn tổ chức được bao nhiêu khoa thi Tiến sĩ?",
+        "options": {
+            "A": "120",
+            "B": "39",
+            "C": "10"
+        },
+        "answer_text": "B. 39",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: 39."
+    },
+    {
+        "id": 97,
+        "question": "Em hãy cho biết cổng Đại Thành tại Văn Miếu – Quốc tử Giám có mấy gian?",
+        "options": {
+            "A": "1 gian",
+            "B": "3 gian",
+            "C": "5 gian"
+        },
+        "answer_text": "B. 3 gian",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: 3 gian."
+    },
+    {
+        "id": 98,
+        "question": "Em hãy cho biết ngói lợp trên điện Đại Thành hiện nay tại Văn Miếu – Quốc Tử Giám là loại ngói nào?",
+        "options": {
+            "A": "Ngói ống",
+            "B": "Ngói mũi hài",
+            "C": "Ngói lưu ly"
+        },
+        "answer_text": "B. Ngói mũi hài",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: Ngói mũi hài."
+    },
+    {
+        "id": 99,
+        "question": "Em hãy cho biết trên nóc nhà Bái Đường tại khu di tích Văn Miếu – Quốc Tử Giám có đắp nổi hình tượng gì?",
+        "options": {
+            "A": "Kỳ lân",
+            "B": "Chim phượng",
+            "C": "Lưỡng long chầu nguyệt"
+        },
+        "answer_text": "C. Lưỡng long chầu nguyệt",
+        "correct_option": "C",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là C: Lưỡng long chầu nguyệt."
+    },
+    {
+        "id": 100,
+        "question": "Em hãy cho biết sân Đại Bái ở Văn Miếu - Quốc Tử Giám hiện nay được lát bằng loại gạch gì?",
+        "options": {
+            "A": "Gạch Bát Tràng",
+            "B": "Gạch đất nung",
+            "C": "Gạch đá hoa"
+        },
+        "answer_text": "A. Gạch Bát Tràng",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: Gạch Bát Tràng."
+    },
+    {
+        "id": 101,
+        "question": "Em hãy cho biết Tòa Bái Đường hiện nay trong khu Văn Miếu – Quốc Tử Giám có mấy gian?",
+        "options": {
+            "A": "7 gian",
+            "B": "9 gian",
+            "C": "5 gian"
+        },
+        "answer_text": "B. 9 gian",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: 9 gian."
+    },
+    {
+        "id": 102,
+        "question": "Em hãy cho biết Điện Đại Thành tại khu di tích Văn Miếu hiện nay đang thờ ai?",
+        "options": {
+            "A": "Khổng Tử và các học trò của ông",
+            "B": "Lão Tử và các học trò của ông",
+            "C": "Phật Thích Ca và các học trò của ông"
+        },
+        "answer_text": "A. Khổng Tử và các học trò của ông",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: Khổng Tử và các học trò của ông."
+    },
+    {
+        "id": 103,
+        "question": "đâu? Khổng Tử là một nhà triết học rất nổi tiếng, em hãy cho biết quê hương của ông ở",
+        "options": {
+            "A": "Nhật Bản",
+            "B": "Trung Quốc",
+            "C": "Việt Nam"
+        },
+        "answer_text": "C. Trung Quốc",
+        "correct_option": "C",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là C: Việt Nam."
+    },
+    {
+        "id": 104,
+        "question": "Em hãy cho biết Khổng Tử là một trong những người đã sáng lập ra học thuyết gì?",
+        "options": {
+            "A": "Lão giáo",
+            "B": "Phật giáo",
+            "C": "Nho giáo"
+        },
+        "answer_text": "C. Nho giáo",
+        "correct_option": "C",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là C: Nho giáo."
+    },
+    {
+        "id": 105,
+        "question": "Trong điện Đại Thành tại di tích Văn Miếu – Quốc Tử Giám còn có 4 vị được phối thờ với Khổng Tử, em hãy cho biết họ là những người như thế nào?",
+        "options": {
+            "A": "Học trò của Khổng Tử",
+            "B": "Anh em của Khổng Tử",
+            "C": "Bốn người bạn của Khổng Tử"
+        },
+        "answer_text": "A. Học trò của Khổng Tử",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: Học trò của Khổng Tử."
+    },
+    {
+        "id": 106,
+        "question": "Mạnh Tử là một trong những người học trò xuất sắc của Khổng Tử, em hãy cho biết quê hương của Mạnh Tử ở đâu?",
+        "options": {
+            "A": "Trung Quốc",
+            "B": "Hàn Quốc",
+            "C": "Nhật Bản"
+        },
+        "answer_text": "A. Trung Quốc",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: Trung Quốc."
+    },
+    {
+        "id": 107,
+        "question": "Mạnh Tử có một người mẹ rất nghiêm khắc, bà đã từng nhiều lần rời nhà để dạy dỗ Mạnh Tử nên người. Em hãy cho biết bà đã quyết định rời nhà mấy lần?",
+        "options": {
+            "A": "3 lần",
+            "B": "2 lần",
+            "C": "1 lần"
+        },
+        "answer_text": "A. 3 lần",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: 3 lần."
+    },
+    {
+        "id": 108,
+        "question": "Tượng của Mạnh Tử (học trò xuất sắc của Khổng Tử) hiện nay tại điện Đại Thành di tích Văn Miếu – Quốc tử Giám được làm bằng gì?",
+        "options": {
+            "A": "Đồng",
+            "B": "Đá",
+            "C": "Gỗ"
+        },
+        "answer_text": "C. Gỗ",
+        "correct_option": "C",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là C: Gỗ."
+    },
+    {
+        "id": 109,
+        "question": "Em hãy cho biết hương án ở trên tòa Đại Bái tại khu di tích Văn Miếu – Quốc Tử Giám có họa tiết đục trạm $g\\hat{o}$ kiểu hoa văn thời nào?",
+        "options": {
+            "A": "Thời Lý",
+            "B": "Thời Trần",
+            "C": "Thời Lê"
+        },
+        "answer_text": "C. Thời Lê",
+        "correct_option": "C",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là C: Thời Lê."
+    },
+    {
+        "id": 110,
+        "question": "Em hãy cho biết bức hoành phi “Vạn thế sư biểu” tại nhà Bái Đường di tích Văn Miếu – Quốc Tử Giám được làm từ năm nào?",
+        "options": {
+            "A": "Năm 1988",
+            "B": "Năm 1808",
+            "C": "Năm 1888"
+        },
+        "answer_text": "C. Năm 1888",
+        "correct_option": "C",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là C: Năm 1888."
+    },
+    {
+        "id": 111,
+        "question": "Em hãy cho biết bức hoành phi “Cổ kim nhật nguyệt tại nhà Bái Đường di tích Văn Miếu – Quốc Tử Giám do ai cho làm?",
+        "options": {
+            "A": "Nguyễn Nghiễm",
+            "B": "Nguyễn Du",
+            "C": "Chu Văn An"
+        },
+        "answer_text": "A. Nguyễn Nghiễm",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: Nguyễn Nghiễm."
+    },
+    {
+        "id": 112,
+        "question": "Em hãy cho biết bức hoành phi “Cổ kim nhật nguyệt” và chuông Bích Ung là hai hiện vật tại nhà Bái Đường di tích Văn Miếu – Quốc Tử Giám được làm từ năm nào?",
+        "options": {
+            "A": "Năm 1678",
+            "B": "Năm 1768",
+            "C": "Năm 1867"
+        },
+        "answer_text": "B. Năm 1768",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: Năm 1768."
+    },
+    {
+        "id": 113,
+        "question": "Em hãy cho biết tượng thờ Khổng Tử hiện nay đặt trong điện Đại Thành di tích Văn Miếu - Quốc Tử Giám được làm từ năm nào?",
+        "options": {
+            "A": "Năm 1729",
+            "B": "Năm 1279",
+            "C": "Năm 1972"
+        },
+        "answer_text": "A. Năm 1729",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: Năm 1729."
+    },
+    {
+        "id": 114,
+        "question": "Em hãy cho biết tượng thờ Khổng Tử hiện nay đặt trong điện Đại Thành tại di tích Văn Miếu – Quốc Tử giám được làm bằng gì?",
+        "options": {
+            "A": "Đất",
+            "B": "Đồng",
+            "C": "Gỗ"
+        },
+        "answer_text": "C. Gỗ",
+        "correct_option": "C",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là C: Gỗ."
+    },
+    {
+        "id": 115,
+        "question": "Đây là cuốn sách ghi lại lời nói và việc làm của Khổng Tử và một số môn đồ khác, được dùng làm một trong sách học của học trò trường Giám xưa. Em hãy cho biết tên cuốn sách đó là gì?",
+        "options": {
+            "A": "Đại thành toán pháp",
+            "B": "Luận ngữ",
+            "C": "Đại Việt sử ký"
+        },
+        "answer_text": "B. Luận ngữ",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: Luận ngữ."
+    },
+    {
+        "id": 116,
+        "question": "Miếu? Em hãy cho biết người thầy giáo tiêu biểu nào của Việt Nam được thờ tại Văn",
+        "options": {
+            "A": "Lê Quý Đôn",
+            "B": "Trương Hán Siêu",
+            "C": "Chu Văn An"
+        },
+        "answer_text": "C. Chu Văn An",
+        "correct_option": "C",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là C: Chu Văn An."
+    },
+    {
+        "id": 117,
+        "question": "Thầy Chu Văn An được thờ tại Văn Miếu từ năm nào?",
+        "options": {
+            "A": "Năm 1937",
+            "B": "Năm 1307",
+            "C": "Năm 1370"
+        },
+        "answer_text": "C. Năm 1370",
+        "correct_option": "C",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là C: Năm 1370."
+    },
+    {
+        "id": 118,
+        "question": "Em hãy cho biết thầy Chu Văn An quê ở đâu?",
+        "options": {
+            "A": "Chí Linh, Hải Dương",
+            "B": "Thanh Trì, Hà Nội",
+            "C": "Nam Đàn, Nghệ An"
+        },
+        "answer_text": "B. Thanh Trì, Hà Nội",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: Thanh Trì, Hà Nội."
+    },
+    {
+        "id": 119,
+        "question": "Theo truyền thuyết, thầy Chu Văn An có một người học trò rất kì lạ, thông minh, chăm chỉ nhưng không biết xuất thân từ đâu. Sau này người học trò ấy đã hi sinh thân mình để giúp dân qua cơn hạn hán. Em hãy cho biết người học trò ấy là ai?",
+        "options": {
+            "A": "Thần mưa",
+            "B": "Thần nước",
+            "C": "Thần sét"
+        },
+        "answer_text": "B. Thần nước",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: Thần nước."
+    },
+    {
+        "id": 120,
+        "question": "Em hãy cho biết thầy Chu Văn An dạy Thái tử nào dưới triều Trần?",
+        "options": {
+            "A": "Thái tử Trần Vượng (vua Trần Hiến Tông)",
+            "B": "Thái tử Trần Mạnh (vua Trần Minh Tông)",
+            "C": "Thái tử Trần Thuyên (vua Trần Anh Tông)"
+        },
+        "answer_text": "A. Thái tử Trần Vượng",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: Thái tử Trần Vượng (vua Trần Hiến Tông)."
+    },
+    {
+        "id": 121,
+        "question": "Em hãy cho biết thầy Chu Văn An giữ chức vụ gì ở trường Quốc Tử Giám?",
+        "options": {
+            "A": "Tế tửu",
+            "B": "Tư nghiệp",
+            "C": "Giáo thụ"
+        },
+        "answer_text": "B. Tư nghiệp",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: Tư nghiệp."
+    },
+    {
+        "id": 122,
+        "question": "Tương truyền thầy Chu Văn An đã dâng một bài sở lên vua Trần Dụ Tông, em hãy cho biết tên bài sớ là gì ?",
+        "options": {
+            "A": "Thất trảm sớ",
+            "B": "Lục trảm sớ",
+            "C": "Bát tràm sớ"
+        },
+        "answer_text": "A. Thất trảm sớ (Xin chém 7 vị quan nịnh thần trong triều)",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thất trảm sớ là bản sớ nổi tiếng của Chu Văn An dâng lên vua Trần Dụ Tông, đề nghị chém 7 tên gian thần có tội hòng giữ nghiêm kỷ cương phép nước."
+    },
+    {
+        "id": 123,
+        "question": "Em hãy cho biết thầy Chu Văn An đi ở ẩn tại đâu?",
+        "options": {
+            "A": "Chí Linh, Hải Dương",
+            "B": "Thanh Trì, Hà Nội",
+            "C": "Nam Đàn, Nghệ An"
+        },
+        "answer_text": "A. Chí Linh, Hải Dương",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: Chí Linh, Hải Dương."
+    },
+    {
+        "id": 124,
+        "question": "Em có biết tượng thờ thầy giáo Chu Văn An hiện nay tại khu Thái Học di tích Văn Miếu – Quốc Tử Giám được làm từ năm nào?",
+        "options": {
+            "A": "Năm 2000",
+            "B": "Năm 2003",
+            "C": "Năm 2010"
+        },
+        "answer_text": "B. Năm 2003",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: Năm 2003."
+    },
+    {
+        "id": 125,
+        "question": "Em hãy cho biết tượng thờ thầy giáo Chu Văn An hiện nay tại khu Thái Học di tích Văn Miếu  Quốc Tử Giám làm bằng chất liệu gì?",
+        "options": {
+            "A": "Thạch cao",
+            "B": "Đồng",
+            "C": "Đất"
+        },
+        "answer_text": "B. Đồng",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: Đồng."
+    },
+    {
+        "id": 126,
+        "question": "Em hãy cho biết tượng thờ thầy giáo Chu Văn An hiện nay tại khu Thái Học di tích Văn Miếu – Quốc Tử Giám nặng bao nhiêu tấn?",
+        "options": {
+            "A": "Nặng 1 tấn",
+            "B": "Nặng 5 tấn",
+            "C": "Nặng 7 tấn"
+        },
+        "answer_text": "B. Nặng 5 tấn",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: Nặng 5 tấn."
+    },
+    {
+        "id": 127,
+        "question": "Em hãy cho biết tượng thờ thầy giáo Chu Văn An hiện nay tại khu Thái Học di tích Văn Miếu – Quốc Tử Giám cao bao nhiêu mét?",
+        "options": {
+            "A": "cao 1 m",
+            "B": "cao 1,3m",
+            "C": "cao 2,3m"
+        },
+        "answer_text": "C. Cao 2,3m",
+        "correct_option": "C",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là C: cao 2,3m."
+    },
+    {
+        "id": 128,
+        "question": "Nam? Em hãy cho biết ngày nay tại Văn Miếu – Quốc Tử Giám thờ mấy vị vua của Việt",
+        "options": {
+            "A": "1 vị vua",
+            "B": "2 vị vua",
+            "C": "3 vị vua"
+        },
+        "answer_text": "C. 3 vị",
+        "correct_option": "C",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là C: 3 vị vua."
+    },
+    {
+        "id": 129,
+        "question": "Em hãy cho biết tượng thờ của ba vị vua đặt tại tầng hai nhà Thái Học di tích Văn Miếu - Quốc Tử Giám được làm từ năm nào?",
+        "options": {
+            "A": "Năm 2000",
+            "B": "Năm 2001",
+            "C": "Năm 2003"
+        },
+        "answer_text": "C. Năm 2003",
+        "correct_option": "C",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là C: Năm 2003."
+    },
+    {
+        "id": 130,
+        "question": "Em hãy cho biết tượng thờ của ba vị vua hiện nay tại tầng hai khu Thái Học di tích Văn Miếu – Quốc Tử Giám làm bằng chất liệu gì?",
+        "options": {
+            "A": "Thạch cao",
+            "B": "Đồng",
+            "C": "Đất"
+        },
+        "answer_text": "B. Đồng",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: Đồng."
+    },
+    {
+        "id": 131,
+        "question": "Hiện nay tại tầng hai khu Thái Học di tích Văn Miếu – Quốc Tử Giám đặt tượng thờ ba vị vua, em hãy cho biết mỗi bức tượng đó nặng bao nhiêu tấn?",
+        "options": {
+            "A": "Nặng 1 tấn",
+            "B": "Nặng 5 tấn",
+            "C": "Nặng 1 tấn"
+        },
+        "answer_text": "A. Nặng 1 tấn",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: Nặng 1 tấn."
+    },
+    {
+        "id": 132,
+        "question": "Khu Thái Học hiện nay được xây trên nền đất của trường Quốc Tử Giám Thăng Long xưa, em hãy cho biết công trình này được xây dựng hoàn thành vào năm nào?",
+        "options": {
+            "A": "Năm 1999",
+            "B": "Năm 2003",
+            "C": "Năm 2000"
+        },
+        "answer_text": "C. Năm 2000",
+        "correct_option": "C",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là C: Năm 2000."
+    },
+    {
+        "id": 133,
+        "question": "Trường Quốc Tử Giám hoạt động khoảng bao nhiêu năm?",
+        "options": {
+            "A": "Khoảng 700 năm",
+            "B": "Khoảng 800 năm",
+            "C": "Khoảng 900 năm"
+        },
+        "answer_text": "A. Khoảng 700 năm",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: Khoảng 700 năm."
+    },
+    {
+        "id": 134,
+        "question": "Em hãy cho biết hậu đường của khu Thái Học tại di tích Văn Miếu – Quốc Tử Giám gồm mấy tầng?",
+        "options": {
+            "A": "1 tầng",
+            "B": "2 tầng",
+            "C": "3 tầng"
+        },
+        "answer_text": "B. 2 tầng",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: 2 tầng."
+    },
+    {
+        "id": 135,
+        "question": "Trên tầng hai của khu Thái Học tại di tích Văn Miếu – Quốc Tử Giám có thờ ba vị danh nhân của dân tộc ta. Em hãy cho biết họ là ai?",
+        "options": {
+            "A": "Ba vị Tiến sĩ",
+            "B": "Ba nhà giáo",
+            "C": "Ba vị vua"
+        },
+        "answer_text": "C. Ba vị vua",
+        "correct_option": "C",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là C: Ba vị vua."
+    },
+    {
+        "id": 136,
+        "question": "Em hãy cho biết năm sinh Vua Lý Thánh Tông?",
+        "options": {
+            "A": "Năm 1023",
+            "B": "Năm 1032",
+            "C": "Năm 1020"
+        },
+        "answer_text": "A. Năm 1023",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: Năm 1023."
+    },
+    {
+        "id": 137,
+        "question": "Em hãy cho biết năm mất Vua Lý Thánh Tông?",
+        "options": {
+            "A": "Năm 1070",
+            "B": "Năm 1072",
+            "C": "Năm 1027"
+        },
+        "answer_text": "B. Năm 1072",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: Năm 1072."
+    },
+    {
+        "id": 137,
+        "question": "Quê hương của vua Lý Thánh Tông ở đâu?",
+        "options": {
+            "A": "Hà Nội",
+            "B": "Bắc Ninh",
+            "C": "Hải Dương"
+        },
+        "answer_text": "A. Bắc Ninh",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: Hà Nội."
+    },
+    {
+        "id": 139,
+        "question": "Em hãy cho biết năm sinh Vua Lý Nhân Tông?",
+        "options": {
+            "A": "Năm 1066",
+            "B": "Năm 1060",
+            "C": "Năm 1660"
+        },
+        "answer_text": "A. Năm 1066",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: Năm 1066."
+    },
+    {
+        "id": 140,
+        "question": "Em hãy cho biết năm mất Vua Lý Nhân Tông?",
+        "options": {
+            "A": "Năm 1070",
+            "B": "Năm 1027",
+            "C": "Năm 1127"
+        },
+        "answer_text": "C. Năm 1127",
+        "correct_option": "C",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là C: Năm 1127."
+    },
+    {
+        "id": 141,
+        "question": "Quê hương của vua Lý Nhân Tông ở đâu?",
+        "options": {
+            "A": "Hà Nội",
+            "B": "Hải Dương",
+            "C": "Bắc Ninh"
+        },
+        "answer_text": "C. Bắc Ninh",
+        "correct_option": "C",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là C: Bắc Ninh."
+    },
+    {
+        "id": 142,
+        "question": "Vua Lý Nhân Tông là người học trò đầu tiên được học tại Văn Miếu, em hãy cho biết khi đó ông bao nhiêu tuổi?",
+        "options": {
+            "A": "5 tuổi",
+            "B": "7 tuổi",
+            "C": "10 tuổi"
+        },
+        "answer_text": "A. 5 tuổi",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: 5 tuổi."
+    },
+    {
+        "id": 143,
+        "question": "Đây là người cho mở khoa thi đầu tiên trong lịch sử khoa cử Việt Nam, em hãy cho biết tên người đó?",
+        "options": {
+            "A": "Lê Thánh Tông",
+            "B": "Lý Nhân Tông",
+            "C": "Trần Nhân Tông"
+        },
+        "answer_text": "B. Lý Nhân Tông",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: Lý Nhân Tông."
+    },
+    {
+        "id": 144,
+        "question": "Người đỗ đầu khoa thi đầu tiên trong lịch sử khoa cử Việt Nam là Lê Văn Thịnh, em hãy cho biết quê hương của ông ở đâu?",
+        "options": {
+            "A": "Hải Phòng",
+            "B": "Bắc Ninh",
+            "C": "Gia Lâm"
+        },
+        "answer_text": "B. Bắc Ninh",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: Bắc Ninh."
+    },
+    {
+        "id": 145,
+        "question": "Em hãy cho biết năm sinh Vua Lê Thánh Tông?",
+        "options": {
+            "A": "Năm 1440",
+            "B": "Năm 1442",
+            "C": "Năm 1424"
+        },
+        "answer_text": "B. Năm 1442",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: Năm 1442."
+    },
+    {
+        "id": 146,
+        "question": "Em hãy cho biết năm mất Vua Lê Thánh Tông?",
+        "options": {
+            "A": "Năm 1497",
+            "B": "Năm 1479",
+            "C": "Năm 1490"
+        },
+        "answer_text": "A. Năm 1497",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: Năm 1497."
+    },
+    {
+        "id": 147,
+        "question": "Bộ luật hoàn chỉnh và có nhiều điểm tiến bộ trong lịch sử luật pháp phong kiến Việt Nam được làm dưới triều Lê Thánh Tông có tên gọi là gì?",
+        "options": {
+            "A": "Bộ luật Hồng Đức",
+            "B": "Bộ luật triều Lê",
+            "C": "Bộ luật Lê Thánh Tông"
+        },
+        "answer_text": "A. Bộ luật Hồng Đức",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: Bộ luật Hồng Đức."
+    },
+    {
+        "id": 148,
+        "question": "Vua Lê Thánh Tông đã cho vẽ tấm bản đồ đầu tiên của quốc gia Đại Việt, em hãy cho biết đó là tấm bản đồ có tên gọi là gì?",
+        "options": {
+            "A": "Bản đồ Đại Việt",
+            "B": "Bản đồ Việt Nam",
+            "C": "Bản đồ Hồng Đức"
+        },
+        "answer_text": "C. Bản đồ Hồng Đức",
+        "correct_option": "C",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Bản đồ Hồng Đức được hoàn thành năm 1490 dưới triều vua Lê Thánh Tông (niên hiệu Hồng Đức), là bộ bản đồ địa lý, hành chính đầu tiên do nhà nước Đại Việt thực hiện."
+    },
+    {
+        "id": 149,
+        "question": "Bác Hồ đã từng tới thăm Văn Miếu, em hãy cho biết Bác đã tới đây mấy lần?",
+        "options": {
+            "A": "1 lần",
+            "B": "2 lần",
+            "C": "3 lần"
+        },
+        "answer_text": "B. 2 lần",
+        "correct_option": "B",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là B: 2 lần."
+    },
+    {
+        "id": 150,
+        "question": "Bác Hồ đã tới thăm Văn Miếu và đọc hai câu thơ tặng các vị phụ lão yêu thơ, em hãy cho biết Bác đọc hai câu thơ đó vào thời điểm nào ?",
+        "options": {
+            "A": "Tết nguyên đán năm 1962",
+            "B": "Tết nguyên đán năm 1960",
+            "C": "Tết nguyên đán năm 1690"
+        },
+        "answer_text": "A. Tết nguyên đán năm 1962 (trích 2 câu thơ: “Tuổi già nhưng chí không già. Góp phần xây dựng nước nhà phồn vinh\")",
+        "correct_option": "A",
+        "fact_check": "Đúng (Verified)",
+        "explanation": "Thông tin đã được kiểm chứng lịch sử. Đáp án chính xác là A: Tết nguyên đán năm 1962."
+    }
+]

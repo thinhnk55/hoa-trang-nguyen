@@ -1,0 +1,63 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro'
+import TrainingClient from '../../../components/TrainingClient.astro'
+import { getQuestion, questionIds, questionPath } from '../../../lib/questions'
+
+export function getStaticPaths() {
+  return questionIds.map((id) => ({ params: { id: String(id) } }))
+}
+
+const id = Number(Astro.params.id)
+const question = getQuestion(id)
+
+if (!question) {
+  return Astro.redirect('/on-tap/van-mieu-quoc-tu-giam')
+}
+---
+
+<BaseLayout title={`Câu ${question.id}: Ôn thi Hoa Trạng Nguyên | Học Nhé`} description={question.question}>
+  <section
+    class="question-shell"
+    data-question-page
+    data-question-id={question.id}
+    data-correct-option={question.correct_option}
+    data-question-path={questionPath(question.id)}
+  >
+    <div class="question-progress" data-question-progress></div>
+    <article class="question-card">
+      <span class="eyebrow">Câu {question.id}</span>
+      <h1>{question.question}</h1>
+      <div class="question-navigation" data-question-navigation aria-label="Chọn cách tiếp tục">
+        <div class="question-navigation-heading">
+          <strong>Chọn cách tiếp tục</strong>
+          <span>Bạn chưa bắt đầu trả lời câu này.</span>
+        </div>
+        <div class="question-navigation-actions">
+        <button class="button button-primary" type="button" data-action="restart">Làm lại toàn bộ</button>
+        <button class="button button-secondary" type="button" data-action="continue">Tiếp tục làm bài</button>
+        <button class="button button-secondary" type="button" data-action="skip-mastered">Bỏ qua câu đã xác nhận đúng</button>
+        </div>
+      </div>
+      <div class="preview-lock" data-preview-lock>
+        <p data-preview-message>Đây là một câu trong bộ đề 150 câu. Hãy bắt đầu từ đầu để lưu đầy đủ tiến độ ôn tập.</p>
+      </div>
+      <div class="answer-area" data-answer-area hidden>
+        <div class="options" role="radiogroup" aria-label="Đáp án">
+          {Object.entries(question.options).map(([key, value]) => (
+            <button type="button" class="option" data-option={key} role="radio" aria-checked="false">
+              <b>{key}</b><span>{value}</span>
+            </button>
+          ))}
+        </div>
+        <section class="explanation" data-explanation hidden aria-live="polite">
+          <span class="result-label" data-result-label></span>
+          <p>{question.explanation}</p>
+        </section>
+        <div class="question-actions" data-question-actions hidden>
+          <button type="button" class="button button-primary" data-next>Tiếp theo</button>
+        </div>
+      </div>
+    </article>
+  </section>
+  <TrainingClient />
+</BaseLayout>

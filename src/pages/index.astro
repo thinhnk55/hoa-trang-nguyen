@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import TrainingClient from '../components/TrainingClient.astro'
+import { questionIds } from '../lib/questions'
+---
+
+<BaseLayout title="Ôn thi Hoa Trạng Nguyên | Học Nhé" description="Ôn tập bộ 150 câu hỏi về Văn Miếu - Quốc Tử Giám cho Quốc thi Hoa Trạng Nguyên.">
+  <section class="hero" data-home>
+    <div class="hero-badge">Bộ câu hỏi ôn tập</div>
+    <h1>Văn Miếu<br /><em>Quốc Tử Giám</em></h1>
+    <p>Ôn từng câu, hiểu lời giải và ghi nhớ đến khi chinh phục đủ {questionIds.length} câu hỏi.</p>
+    <div class="progress-card" data-home-progress hidden></div>
+    <div class="order-toggle" role="group" aria-label="Thứ tự câu hỏi">
+      <span>Thứ tự câu hỏi</span>
+      <label><input type="radio" name="order" value="normal" checked /> Từ câu 1</label>
+      <label><input type="radio" name="order" value="reverse" /> Đảo thứ tự</label>
+    </div>
+    <div class="hero-actions">
+      <button class="button button-primary" type="button" data-action="restart">Làm lại toàn bộ</button>
+      <button class="button button-secondary" type="button" data-action="continue">Tiếp tục làm bài</button>
+      <button class="button button-secondary" type="button" data-action="skip-mastered">Bỏ qua câu đã xác nhận đúng</button>
+    </div>
+  </section>
+  <section class="feature-grid" aria-label="Cách ôn tập">
+    <article><b>150</b><span>Câu hỏi đã kiểm chứng</span></article>
+    <article><b>Hiểu sâu</b><span>Hiện lời giải ngay sau mỗi đáp án</span></article>
+    <article><b>Ghi nhớ</b><span>Ôn lại riêng các câu chưa đúng</span></article>
+  </section>
+  <TrainingClient />
+</BaseLayout>

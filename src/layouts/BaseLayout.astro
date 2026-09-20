@@ -1,0 +1,42 @@
+---
+import logo from '../assets/brand/logo.png'
+import correctSound from '../assets/sounds/correct.mp3'
+import wrongSound from '../assets/sounds/wrong.mp3'
+import '../styles/global.css'
+
+interface Props {
+  title: string
+  description: string
+}
+
+const { title, description } = Astro.props
+---
+
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#f97316" />
+    <link rel="icon" type="image/png" href={logo.src} />
+    <title>{title}</title>
+  </head>
+  <body data-correct-sound={correctSound} data-wrong-sound={wrongSound}>
+    <main class="page-shell">
+      <header class="site-header">
+        <a href="/" class="brand" aria-label="Học Nhé - Hoa Trạng Nguyên">
+          <img src={logo.src} alt="Học Nhé" width="42" height="42" />
+          <span><strong>Học Nhé</strong><small>Hoa Trạng Nguyên</small></span>
+        </a>
+        <a class="header-link home-link" href="/" aria-label="Trang chủ" title="Trang chủ">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V10Z" />
+          </svg>
+          <span class="sr-only">Trang chủ</span>
+        </a>
+      </header>
+      <slot />
+    </main>
+  </body>
+</html>
