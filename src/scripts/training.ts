@@ -153,6 +153,7 @@ function showAnswerResult(page: HTMLElement, isCorrect: boolean) {
   label?.replaceChildren(isCorrect ? 'Chính xác!' : 'Chưa đúng rồi')
   label?.classList.toggle('is-correct', isCorrect)
   label?.classList.toggle('is-wrong', !isCorrect)
+  page.querySelector<HTMLElement>('[data-explanation]')?.removeAttribute('hidden')
   const actions = page.querySelector<HTMLElement>('[data-question-actions]')
   actions?.removeAttribute('hidden')
   requestAnimationFrame(() => actions?.scrollIntoView({ behavior: 'smooth', block: 'nearest' }))
@@ -231,15 +232,6 @@ document.addEventListener('click', (event) => {
   const option = target?.closest<HTMLButtonElement>('[data-option]')
   if (option) {
     answerQuestion(option)
-    return
-  }
-  const explanationToggle = target?.closest<HTMLButtonElement>('[data-toggle-explanation]')
-  if (explanationToggle) {
-    const page = explanationToggle.closest<HTMLElement>('[data-question-page]')
-    const explanation = page?.querySelector<HTMLElement>('[data-explanation]')
-    const isExpanded = explanationToggle.getAttribute('aria-expanded') === 'true'
-    explanationToggle.setAttribute('aria-expanded', String(!isExpanded))
-    explanation?.toggleAttribute('hidden', isExpanded)
     return
   }
   if (target?.closest('[data-next]')) {
