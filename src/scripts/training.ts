@@ -25,6 +25,7 @@ type PracticeState = {
 
 type PracticeSettings = {
   timeLimitMinutes: number
+  randomOrder: boolean
 }
 
 function questionPath(id: number) {
@@ -71,14 +72,15 @@ function saveState(state: PracticeState) {
 function readSettings(): PracticeSettings {
   try {
     const value = localStorage.getItem(SETTINGS_KEY)
-    if (!value) return { timeLimitMinutes: 30 }
+    if (!value) return { timeLimitMinutes: 30, randomOrder: false }
     const settings = JSON.parse(value) as Partial<PracticeSettings>
     const minutes = Number(settings.timeLimitMinutes)
-    return minutes >= MIN_TIME_LIMIT_MINUTES && minutes <= MAX_TIME_LIMIT_MINUTES
-      ? { timeLimitMinutes: minutes }
-      : { timeLimitMinutes: 30 }
+    return {
+      timeLimitMinutes: minutes >= MIN_TIME_LIMIT_MINUTES && minutes <= MAX_TIME_LIMIT_MINUTES ? minutes : 30,
+      randomOrder: settings.randomOrder === true,
+    }
   } catch {
-    return { timeLimitMinutes: 30 }
+    return { timeLimitMinutes: 30, randomOrder: false }
   }
 }
 
@@ -91,7 +93,7 @@ function selectedTimeLimitSeconds() {
 }
 
 function selectedOrder(): Order {
-  return document.querySelector<HTMLInputElement>('[data-random-order]')?.checked ? 'random' : 'normal'
+  return readSettings().randomOrder ? 'random' : 'normal'
 }
 
 function shuffleIds(ids: number[]) {
@@ -405,12 +407,17 @@ document.addEventListener('change', (event) => {
   if (!target?.matches('[data-time-limit]')) return
   const minutes = Number(target.value)
   if (Number.isInteger(minutes) && minutes >= MIN_TIME_LIMIT_MINUTES && minutes <= MAX_TIME_LIMIT_MINUTES) {
-    saveSettings({ timeLimitMinutes: minutes })
+    saveSettings({ ...readSettings(), timeLimitMinutes: minutes })
   }
 })
 
 const timeLimitInput = document.querySelector<HTMLInputElement>('[data-time-limit]')
 if (timeLimitInput) timeLimitInput.value = String(readSettings().timeLimitMinutes)
+const randomOrderInput = document.querySelector<HTMLInputElement>('[data-random-order]')
+if (randomOrderInput) randomOrderInput.checked = readSettings().randomOrder
+randomOrderInput?.addEventListener('change', () => {
+  saveSettings({ ...readSettings(), randomOrder: randomOrderInput.checked })
+})
 updateHome()
 updateIntro()
 setQuestionMode()
