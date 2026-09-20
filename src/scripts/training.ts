@@ -209,8 +209,8 @@ function updateHome() {
   const resetButton = document.querySelector<HTMLButtonElement>('[data-reset-button]')
   if (!progress || !continueButton || !skipMasteredButton) return
   if (resetButton) resetButton.hidden = !state
-  continueButton.disabled = !isActive(state)
-  skipMasteredButton.disabled = !state?.masteredIds.length || state.masteredIds.length === QUESTION_COUNT
+  continueButton.hidden = !isActive(state)
+  skipMasteredButton.hidden = !state?.masteredIds.length || state.masteredIds.length === QUESTION_COUNT
   if (!state) return
   progress.hidden = false
   const mastered = state.masteredIds.length
@@ -251,8 +251,8 @@ function setQuestionMode() {
   const revealButton = page.querySelector<HTMLButtonElement>('[data-reveal-answer]')
   const continueButton = page.querySelector<HTMLButtonElement>('[data-action="continue"]')
   const skipMasteredButton = page.querySelector<HTMLButtonElement>('[data-action="skip-mastered"]')
-  continueButton?.toggleAttribute('disabled', !isActive(state))
-  skipMasteredButton?.toggleAttribute('disabled', !state?.masteredIds.length || state.masteredIds.length === QUESTION_COUNT)
+  continueButton?.toggleAttribute('hidden', !isActive(state))
+  skipMasteredButton?.toggleAttribute('hidden', !state?.masteredIds.length || state.masteredIds.length === QUESTION_COUNT)
 
   if (state) {
     document.querySelector<HTMLElement>('[data-session-stats]')?.removeAttribute('hidden')
