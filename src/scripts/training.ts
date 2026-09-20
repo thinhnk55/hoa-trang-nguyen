@@ -8,7 +8,7 @@ const HOME_PATH = '/'
 const PRACTICE_PATH = '/on-tap/van-mieu-quoc-tu-giam'
 const RESULT_PATH = `${PRACTICE_PATH}/ket-qua`
 
-type Order = 'normal' | 'reverse'
+type Order = 'normal' | 'random'
 type PracticeState = {
   queue: number[]
   currentIndex: number
@@ -91,7 +91,16 @@ function selectedTimeLimitSeconds() {
 }
 
 function selectedOrder(): Order {
-  return document.querySelector<HTMLInputElement>('[data-reverse-order]')?.checked ? 'reverse' : 'normal'
+  return document.querySelector<HTMLInputElement>('[data-random-order]')?.checked ? 'random' : 'normal'
+}
+
+function shuffleIds(ids: number[]) {
+  const shuffled = [...ids]
+  for (let index = shuffled.length - 1; index > 0; index -= 1) {
+    const randomIndex = Math.floor(Math.random() * (index + 1))
+    ;[shuffled[index], shuffled[randomIndex]] = [shuffled[randomIndex], shuffled[index]]
+  }
+  return shuffled
 }
 
 function isActive(state: PracticeState | null) {
@@ -100,7 +109,7 @@ function isActive(state: PracticeState | null) {
 
 function startPractice(order: Order = 'normal', queue?: number[]) {
   const ids = queue?.length ? queue : Array.from({ length: QUESTION_COUNT }, (_, index) => index + 1)
-  const normalizedQueue = order === 'reverse' ? [...ids].reverse() : ids
+  const normalizedQueue = order === 'random' ? shuffleIds(ids) : ids
   const existing = readState()
   const timeLimitSeconds = selectedTimeLimitSeconds()
   const state: PracticeState = {
