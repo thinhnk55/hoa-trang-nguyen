@@ -74,7 +74,7 @@ function saveState(state: PracticeState) {
 function readSettings(): PracticeSettings {
   try {
     const value = localStorage.getItem(SETTINGS_KEY)
-    if (!value) return { timeLimitMinutes: 30, randomOrder: false, revealAnswer: false }
+    if (!value) return { timeLimitMinutes: 30, randomOrder: false, revealAnswer: true }
     const settings = JSON.parse(value) as Partial<PracticeSettings>
     const minutes = Number(settings.timeLimitMinutes)
     return {
@@ -83,7 +83,7 @@ function readSettings(): PracticeSettings {
       revealAnswer: settings.revealAnswer === true,
     }
   } catch {
-    return { timeLimitMinutes: 30, randomOrder: false, revealAnswer: false }
+    return { timeLimitMinutes: 30, randomOrder: false, revealAnswer: true }
   }
 }
 
