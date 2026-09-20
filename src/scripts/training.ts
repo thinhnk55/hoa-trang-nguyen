@@ -90,6 +90,10 @@ function selectedTimeLimitSeconds() {
   return readSettings().timeLimitMinutes * 60
 }
 
+function selectedOrder(): Order {
+  return document.querySelector<HTMLInputElement>('[data-reverse-order]')?.checked ? 'reverse' : 'normal'
+}
+
 function isActive(state: PracticeState | null) {
   return Boolean(state && !state.completedAt && state.currentIndex < state.queue.length)
 }
@@ -341,8 +345,7 @@ document.addEventListener('click', (event) => {
   const start = target?.closest<HTMLElement>('[data-start]')
   if (start) {
     event.preventDefault()
-    const order = document.querySelector<HTMLInputElement>('input[name="order"]:checked')?.value === 'reverse' ? 'reverse' : 'normal'
-    startPractice(order)
+    startPractice(selectedOrder())
     return
   }
   if (target?.closest('[data-continue]') || target?.closest('[data-resume]')) {
@@ -371,8 +374,7 @@ document.addEventListener('click', (event) => {
   if (action) {
     const actionName = action.dataset.action
     if (actionName === 'restart') {
-      const order = document.querySelector<HTMLInputElement>('input[name="order"]:checked')?.value === 'reverse' ? 'reverse' : 'normal'
-      startPractice(order)
+      startPractice(selectedOrder())
     } else if (actionName === 'continue') {
       const state = readState()
       if (state && isActive(state)) window.location.assign(questionPath(state.queue[state.currentIndex]))
@@ -384,8 +386,7 @@ document.addEventListener('click', (event) => {
       document.querySelector<HTMLElement>('[data-reset-confirm]')?.setAttribute('hidden', '')
     } else if (actionName === 'confirm-reset') {
       localStorage.removeItem(STORAGE_KEY)
-      const order = document.querySelector<HTMLInputElement>('input[name="order"]:checked')?.value === 'reverse' ? 'reverse' : 'normal'
-      startPractice(order)
+      startPractice(selectedOrder())
     }
   }
 })

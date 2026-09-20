@@ -10,10 +10,8 @@ import { questionIds } from '../lib/questions'
     <h1>Văn Miếu<br /><em>Quốc Tử Giám</em></h1>
     <p>Ôn từng câu, hiểu lời giải và ghi nhớ đến khi chinh phục đủ {questionIds.length} câu hỏi.</p>
     <div class="progress-card" data-home-progress hidden></div>
-    <div class="order-toggle" role="group" aria-label="Thứ tự câu hỏi">
-      <span>Thứ tự câu hỏi</span>
-      <label><input type="radio" name="order" value="normal" checked /> Từ câu 1</label>
-      <label><input type="radio" name="order" value="reverse" /> Đảo thứ tự</label>
+    <div class="order-toggle" role="group" aria-label="Cài đặt lượt làm bài">
+      <label><input type="checkbox" data-reverse-order /> Đảo thứ tự câu hỏi</label>
       <label class="time-setting" title="Thời gian tối đa cho một phiên làm bài">
         <span aria-hidden="true">⏱</span>
         <input data-time-limit type="number" min="1" max="99" step="1" value="30" inputmode="numeric" aria-label="Số phút làm bài tối đa" />
