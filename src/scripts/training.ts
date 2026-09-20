@@ -76,7 +76,9 @@ function updateHome() {
   const progress = document.querySelector<HTMLElement>('[data-home-progress]')
   const continueButton = document.querySelector<HTMLButtonElement>('[data-action="continue"]')
   const skipMasteredButton = document.querySelector<HTMLButtonElement>('[data-action="skip-mastered"]')
+  const resetButton = document.querySelector<HTMLButtonElement>('[data-reset-button]')
   if (!progress || !continueButton || !skipMasteredButton) return
+  if (resetButton) resetButton.hidden = !state
   continueButton.disabled = !isActive(state)
   skipMasteredButton.disabled = !state?.masteredIds.length || state.masteredIds.length === QUESTION_COUNT
   if (!state) return
@@ -147,13 +149,13 @@ function showAnswerResult(page: HTMLElement, isCorrect: boolean) {
     if (option.dataset.option === page.dataset.correctOption) option.classList.add('correct')
     if (!isCorrect && option.getAttribute('aria-checked') === 'true') option.classList.add('wrong')
   })
-  const explanation = page.querySelector<HTMLElement>('[data-explanation]')
   const label = page.querySelector<HTMLElement>('[data-result-label]')
   label?.replaceChildren(isCorrect ? 'Chính xác!' : 'Chưa đúng rồi')
   label?.classList.toggle('is-correct', isCorrect)
   label?.classList.toggle('is-wrong', !isCorrect)
-  explanation?.removeAttribute('hidden')
-  page.querySelector<HTMLElement>('[data-question-actions]')?.removeAttribute('hidden')
+  const actions = page.querySelector<HTMLElement>('[data-question-actions]')
+  actions?.removeAttribute('hidden')
+  requestAnimationFrame(() => actions?.scrollIntoView({ behavior: 'smooth', block: 'nearest' }))
 }
 
 function answerQuestion(button: HTMLButtonElement) {
@@ -231,6 +233,15 @@ document.addEventListener('click', (event) => {
     answerQuestion(option)
     return
   }
+  const explanationToggle = target?.closest<HTMLButtonElement>('[data-toggle-explanation]')
+  if (explanationToggle) {
+    const page = explanationToggle.closest<HTMLElement>('[data-question-page]')
+    const explanation = page?.querySelector<HTMLElement>('[data-explanation]')
+    const isExpanded = explanationToggle.getAttribute('aria-expanded') === 'true'
+    explanationToggle.setAttribute('aria-expanded', String(!isExpanded))
+    explanation?.toggleAttribute('hidden', isExpanded)
+    return
+  }
   if (target?.closest('[data-next]')) {
     nextQuestion()
     return
@@ -254,6 +265,14 @@ document.addEventListener('click', (event) => {
       if (state && isActive(state)) window.location.assign(questionPath(state.queue[state.currentIndex]))
     } else if (actionName === 'skip-mastered') {
       startRemainingPractice()
+    } else if (actionName === 'reset') {
+      document.querySelector<HTMLElement>('[data-reset-confirm]')?.removeAttribute('hidden')
+    } else if (actionName === 'cancel-reset') {
+      document.querySelector<HTMLElement>('[data-reset-confirm]')?.setAttribute('hidden', '')
+    } else if (actionName === 'confirm-reset') {
+      localStorage.removeItem(STORAGE_KEY)
+      const order = document.querySelector<HTMLInputElement>('input[name="order"]:checked')?.value === 'reverse' ? 'reverse' : 'normal'
+      startPractice(order)
     }
   }
 })

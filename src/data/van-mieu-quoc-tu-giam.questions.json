@@ -235,7 +235,7 @@
     },
     {
         "id": 19,
-        "question": "Giám? Em hãy cho biết ai là người cho xây dựng Khuê Văn Các tại Văn Miếu - Quốc Tử",
+        "question": "Em hãy cho biết ai là người cho xây dựng Khuê Văn Các tại Văn Miếu - Quốc Tử Giám?",
         "options": {
             "A": "Tổng trấn Bắc thành Nguyễn Văn Thành",
             "B": "Tổng đốc Hà Nội Hoàng Diệu",
@@ -248,7 +248,7 @@
     },
     {
         "id": 20,
-        "question": "Cửa sổ tròn của Khuê Văn Các tại dị tích Văn Miếu – Quốc Tử Giám có ý nghĩa rất đẹp, em hãy cho biết ý nghĩa đó là gì?",
+        "question": "Cửa sổ tròn của Khuê Văn Các tại di tích Văn Miếu – Quốc Tử Giám có ý nghĩa rất đẹp, em hãy cho biết ý nghĩa đó là gì?",
         "options": {
             "A": "Mặt trời",
             "B": "Sao Khuê",
@@ -482,7 +482,7 @@
     },
     {
         "id": 38,
-        "question": "của nó? Trong Văn Miếu - Quốc Tử Giám có giếng Thiên Quang. Em hãy cho biết vị trí",
+        "question": "Trong Văn Miếu - Quốc Tử Giám có giếng Thiên Quang. Em hãy cho biết vị trí của nó?",
         "options": {
             "A": "Giữa vườn bia Tiến sĩ.",
             "B": "Phía trước Văn Miếu - Quốc Tử Giám",
@@ -521,7 +521,7 @@
     },
     {
         "id": 41,
-        "question": "1075? Ai là người cho tổ chức khoa thi đầu tiên trong lịch sử khoa cử nước ta vào năm",
+        "question": "Ai là người cho tổ chức khoa thi đầu tiên trong lịch sử khoa cử nước ta vào năm 1075?",
         "options": {
             "A": "Vua Lý Thánh Tông",
             "B": "Vua Lý Nhân Tông",
@@ -1002,7 +1002,7 @@
     },
     {
         "id": 78,
-        "question": "Nội? Vị tiến sĩ cuối cùng được khắc tên trên bia tiến sĩ ở Văn Miếu – Quốc Tử Giám Hà",
+        "question": "Vị tiến sĩ cuối cùng được khắc tên trên bia tiến sĩ ở Văn Miếu – Quốc Tử Giám Hà Nội?",
         "options": {
             "A": "Phan Huy Ôn",
             "B": "Ngô Thì Sĩ",
@@ -1327,7 +1327,7 @@
     },
     {
         "id": 103,
-        "question": "đâu? Khổng Tử là một nhà triết học rất nổi tiếng, em hãy cho biết quê hương của ông ở",
+        "question": "Khổng Tử là một nhà triết học rất nổi tiếng, em hãy cho biết quê hương của ông ở đâu?",
         "options": {
             "A": "Nhật Bản",
             "B": "Trung Quốc",
@@ -1405,7 +1405,7 @@
     },
     {
         "id": 109,
-        "question": "Em hãy cho biết hương án ở trên tòa Đại Bái tại khu di tích Văn Miếu – Quốc Tử Giám có họa tiết đục trạm $g\\hat{o}$ kiểu hoa văn thời nào?",
+        "question": "Em hãy cho biết hương án ở trên tòa Đại Bái tại khu di tích Văn Miếu – Quốc Tử Giám có họa tiết đục chạm gỗ kiểu hoa văn thời nào?",
         "options": {
             "A": "Thời Lý",
             "B": "Thời Trần",
@@ -1470,7 +1470,7 @@
     },
     {
         "id": 114,
-        "question": "Em hãy cho biết tượng thờ Khổng Tử hiện nay đặt trong điện Đại Thành tại di tích Văn Miếu – Quốc Tử giám được làm bằng gì?",
+        "question": "Em hãy cho biết tượng thờ Khổng Tử hiện nay đặt trong điện Đại Thành tại di tích Văn Miếu – Quốc Tử Giám được làm bằng gì?",
         "options": {
             "A": "Đất",
             "B": "Đồng",
@@ -1483,7 +1483,7 @@
     },
     {
         "id": 115,
-        "question": "Đây là cuốn sách ghi lại lời nói và việc làm của Khổng Tử và một số môn đồ khác, được dùng làm một trong sách học của học trò trường Giám xưa. Em hãy cho biết tên cuốn sách đó là gì?",
+        "question": "Đây là cuốn sách ghi lại lời nói và việc làm của Khổng Tử và một số môn đồ khác, được dùng làm một trong những sách học của học trò trường Giám xưa. Em hãy cho biết tên cuốn sách đó là gì?",
         "options": {
             "A": "Đại thành toán pháp",
             "B": "Luận ngữ",
@@ -1496,7 +1496,7 @@
     },
     {
         "id": 116,
-        "question": "Miếu? Em hãy cho biết người thầy giáo tiêu biểu nào của Việt Nam được thờ tại Văn",
+        "question": "Em hãy cho biết người thầy giáo tiêu biểu nào của Việt Nam được thờ tại Văn Miếu?",
         "options": {
             "A": "Lê Quý Đôn",
             "B": "Trương Hán Siêu",
@@ -1535,7 +1535,7 @@
     },
     {
         "id": 119,
-        "question": "Theo truyền thuyết, thầy Chu Văn An có một người học trò rất kì lạ, thông minh, chăm chỉ nhưng không biết xuất thân từ đâu. Sau này người học trò ấy đã hi sinh thân mình để giúp dân qua cơn hạn hán. Em hãy cho biết người học trò ấy là ai?",
+        "question": "Theo truyền thuyết, thầy Chu Văn An có một người học trò rất kỳ lạ, thông minh, chăm chỉ nhưng không biết xuất thân từ đâu. Sau này người học trò ấy đã hy sinh thân mình để giúp dân qua cơn hạn hán. Em hãy cho biết người học trò ấy là ai?",
         "options": {
             "A": "Thần mưa",
             "B": "Thần nước",
@@ -1652,7 +1652,7 @@
     },
     {
         "id": 128,
-        "question": "Nam? Em hãy cho biết ngày nay tại Văn Miếu – Quốc Tử Giám thờ mấy vị vua của Việt",
+        "question": "Em hãy cho biết ngày nay tại Văn Miếu – Quốc Tử Giám thờ mấy vị vua của Việt Nam?",
         "options": {
             "A": "1 vị vua",
             "B": "2 vị vua",

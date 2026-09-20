@@ -19,6 +19,14 @@ import { questionIds } from '../lib/questions'
       <button class="button button-primary" type="button" data-action="restart">Làm lại toàn bộ</button>
       <button class="button button-secondary" type="button" data-action="continue">Tiếp tục làm bài</button>
       <button class="button button-secondary" type="button" data-action="skip-mastered">Bỏ qua câu đã xác nhận đúng</button>
+      <button class="button button-danger" type="button" data-reset-button data-action="reset" hidden>Xóa tiến độ</button>
+    </div>
+    <div class="reset-progress">
+      <div class="reset-confirm" data-reset-confirm hidden>
+        <span>Xóa các câu đã xác nhận đúng để làm lại từ đầu?</span>
+        <button class="button button-quiet" type="button" data-action="cancel-reset">Hủy</button>
+        <button class="button button-danger" type="button" data-action="confirm-reset">Xóa và làm lại</button>
+      </div>
     </div>
   </section>
   <section class="feature-grid" aria-label="Cách ôn tập">
