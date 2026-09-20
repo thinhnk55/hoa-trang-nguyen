@@ -1,5 +1,6 @@
 const STORAGE_KEY = 'hocnhe.hoa-trang-nguyen.practice.v1'
 const QUESTION_COUNT = 150
+const TIME_LIMIT_SECONDS = 30 * 60
 const HOME_PATH = '/'
 const PRACTICE_PATH = '/on-tap/van-mieu-quoc-tu-giam'
 const RESULT_PATH = `${PRACTICE_PATH}/ket-qua`
@@ -12,7 +13,10 @@ type PracticeState = {
   masteredIds: number[]
   lastIncorrectIds: number[]
   answers: Record<string, boolean>
+  startedAt: string
+  expiresAt: string
   completedAt?: string
+  endedReason?: 'completed' | 'timeout'
 }
 
 function questionPath(id: number) {
@@ -25,6 +29,22 @@ function readState(): PracticeState | null {
     if (!value) return null
     const state = JSON.parse(value) as PracticeState
     if (!Array.isArray(state.queue) || !Number.isInteger(state.currentIndex)) return null
+    const now = Date.now()
+    let changed = false
+    if (!state.startedAt) {
+      state.startedAt = new Date(now).toISOString()
+      changed = true
+    }
+    if (!state.expiresAt) {
+      state.expiresAt = new Date(now + TIME_LIMIT_SECONDS * 1000).toISOString()
+      changed = true
+    }
+    if (!state.completedAt && Date.parse(state.expiresAt) <= now) {
+      state.completedAt = new Date(now).toISOString()
+      state.endedReason = 'timeout'
+      changed = true
+    }
+    if (changed) saveState(state)
     return state
   } catch {
     return null
@@ -50,6 +70,8 @@ function startPractice(order: Order = 'normal', queue?: number[]) {
     masteredIds: existing?.masteredIds ?? [],
     lastIncorrectIds: [],
     answers: {},
+    startedAt: new Date().toISOString(),
+    expiresAt: new Date(Date.now() + TIME_LIMIT_SECONDS * 1000).toISOString(),
   }
   saveState(state)
   window.location.assign(questionPath(state.queue[0]))
@@ -69,6 +91,56 @@ function playFeedback(isCorrect: boolean) {
   const audio = new Audio(source)
   audio.volume = 0.65
   void audio.play().catch(() => undefined)
+}
+
+function formatTime(totalSeconds: number) {
+  const minutes = Math.floor(totalSeconds / 60).toString().padStart(2, '0')
+  const seconds = Math.max(0, totalSeconds % 60).toString().padStart(2, '0')
+  return `${minutes}:${seconds}`
+}
+
+function getSessionStats(state: PracticeState) {
+  const values = Object.values(state.answers)
+  return {
+    correct: values.filter(Boolean).length,
+    incorrect: values.filter((answer) => !answer).length,
+    remaining: Math.max(0, Math.ceil((Date.parse(state.expiresAt) - Date.now()) / 1000)),
+  }
+}
+
+let sessionTimer: number | undefined
+
+function updateSessionStats(state: PracticeState) {
+  const stats = getSessionStats(state)
+  document.querySelector<HTMLElement>('[data-session-timer]')?.replaceChildren(formatTime(stats.remaining))
+  document.querySelector<HTMLElement>('[data-session-correct]')?.replaceChildren(String(stats.correct))
+  document.querySelector<HTMLElement>('[data-session-incorrect]')?.replaceChildren(String(stats.incorrect))
+}
+
+function showTimeoutMessage() {
+  document.querySelector<HTMLElement>('[data-timeout-message]')?.removeAttribute('hidden')
+  document.querySelector<HTMLElement>('[data-answer-area]')?.setAttribute('hidden', '')
+  document.querySelector<HTMLElement>('[data-question-navigation]')?.setAttribute('hidden', '')
+  window.setTimeout(() => window.location.assign(RESULT_PATH), 1200)
+}
+
+function startSessionTimer(state: PracticeState) {
+  window.clearInterval(sessionTimer)
+  updateSessionStats(state)
+  if (!isActive(state)) {
+    if (state.endedReason === 'timeout') showTimeoutMessage()
+    return
+  }
+  sessionTimer = window.setInterval(() => {
+    const current = readState()
+    if (!current) return
+    if (!isActive(current)) {
+      window.clearInterval(sessionTimer)
+      if (current.endedReason === 'timeout') showTimeoutMessage()
+      return
+    }
+    updateSessionStats(current)
+  }, 1000)
 }
 
 function updateHome() {
@@ -124,6 +196,10 @@ function setQuestionMode() {
   continueButton?.toggleAttribute('disabled', !isActive(state))
   skipMasteredButton?.toggleAttribute('disabled', !state?.masteredIds.length || state.masteredIds.length === QUESTION_COUNT)
 
+  if (state) {
+    document.querySelector<HTMLElement>('[data-session-stats]')?.removeAttribute('hidden')
+    startSessionTimer(state)
+  }
   if (!state || !isActive(state)) return
   const activeId = state.queue[state.currentIndex]
   if (activeId !== id) {
@@ -173,6 +249,7 @@ function answerQuestion(button: HTMLButtonElement) {
   if (isCorrect && !state.masteredIds.includes(id)) state.masteredIds.push(id)
   if (!isCorrect && !state.lastIncorrectIds.includes(id)) state.lastIncorrectIds.push(id)
   saveState(state)
+  updateSessionStats(state)
   playFeedback(isCorrect)
   showAnswerResult(page, isCorrect)
 }
@@ -183,6 +260,7 @@ function nextQuestion() {
   state.currentIndex += 1
   if (state.currentIndex >= state.queue.length) {
     state.completedAt = new Date().toISOString()
+    state.endedReason = 'completed'
     saveState(state)
     window.location.assign(RESULT_PATH)
     return
@@ -200,17 +278,24 @@ function renderResults() {
     return
   }
   const correct = Object.values(state.answers).filter(Boolean).length
-  const incorrect = state.queue.length - correct
+  const incorrect = Object.values(state.answers).filter((answer) => !answer).length
+  const elapsedSeconds = Math.min(
+    TIME_LIMIT_SECONDS,
+    Math.max(0, Math.floor((Date.parse(state.completedAt) - Date.parse(state.startedAt)) / 1000)),
+  )
   const title = page.querySelector<HTMLElement>('[data-result-title]')
   const summary = page.querySelector<HTMLElement>('[data-result-summary]')
   const stats = page.querySelector<HTMLElement>('[data-result-stats]')
-  if (state.masteredIds.length === QUESTION_COUNT) {
+  if (state.endedReason === 'timeout') {
+    title?.replaceChildren('Hết giờ')
+    summary?.replaceChildren('Phiên làm bài đã kết thúc vì đã hết 30 phút. Em có thể làm lại hoặc ôn các câu sai.')
+  } else if (state.masteredIds.length === QUESTION_COUNT) {
     title?.replaceChildren('Thành tựu đã hoàn thành!')
     summary?.replaceChildren('Em đã từng trả lời đúng đủ 150 câu hỏi. Rất tuyệt vời!')
   } else {
     summary?.replaceChildren('Em có thể làm lại toàn bộ hoặc ôn riêng các câu vừa trả lời chưa đúng.')
   }
-  if (stats) stats.innerHTML = `<div><b>${correct}</b><span>Đúng lượt này</span></div><div><b>${incorrect}</b><span>Cần ôn lại</span></div><div><b>${state.masteredIds.length}/150</b><span>Đã xác nhận đúng</span></div>`
+  if (stats) stats.innerHTML = `<div><b>${formatTime(elapsedSeconds)}</b><span>Thời gian</span></div><div><b>${correct}</b><span>Câu đúng</span></div><div><b>${incorrect}</b><span>Câu sai</span></div><div><b>${state.masteredIds.length}/150</b><span>Đã xác nhận đúng</span></div>`
   const retryWrong = page.querySelector<HTMLButtonElement>('[data-retry-wrong]')
   if (retryWrong && !state.lastIncorrectIds.length) retryWrong.hidden = true
 }

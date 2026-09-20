@@ -24,6 +24,15 @@ if (!question) {
     data-question-path={questionPath(question.id)}
   >
     <div class="question-progress" data-question-progress></div>
+    <div class="session-stats" data-session-stats hidden>
+      <div><span>Còn lại</span><strong data-session-timer>30:00</strong></div>
+      <div><span>Đúng</span><strong data-session-correct>0</strong></div>
+      <div><span>Sai</span><strong data-session-incorrect>0</strong></div>
+    </div>
+    <div class="timeout-message" data-timeout-message hidden>
+      <strong>Hết giờ</strong>
+      <span>Phiên làm bài đã kết thúc. Đang chuyển sang kết quả.</span>
+    </div>
     <article class="question-card">
       <span class="eyebrow">Câu {question.id}</span>
       <h1>{question.question}</h1>
